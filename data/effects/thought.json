@@ -1,0 +1,67 @@
+{
+    "Active Aggression": {
+        "name": "Active Aggression",
+        "powerModifier": 8,
+        "effect": "While in play, this Thought or Group must declare an engagement every turn if able."
+    },
+    "Active Power-amp": {
+        "name": "Active Power-amp",
+        "powerModifier": -6,
+        "effect": "While in play, increase the Power all of your own Thoughts in play by 4."
+    },
+    "Challenger Power-up": {
+        "name": "Challenger Power-up",
+        "powerModifier": -4,
+        "effect": "While resolving an engagement, the Power of this Thought doubles."
+    },
+    "Direct-challenge Power-up": {
+        "name": "Direct-challenge Power-up",
+        "powerModifier": -4,
+        "effect": "While engaging a Thinker, the Power of this Thought doubles."
+    },
+    "End-turn Disengage": {
+        "name": "End-turn Disengage",
+        "powerModifier": -6,
+        "effect": "When a turn ends, Disengage this Thought or Group."
+    },
+    "End-turn Discard": {
+        "name": "End-turn Discard",
+        "powerModifier": 34,
+        "effect": "When a turn ends, remove this card from play."
+    },
+    "Engaged Penalty": {
+        "name": "Engaged Penalty",
+        "powerModifier": 30,
+        "effect": "While Engaged, you may only Disengage this Thought or Group by removing one other Thought you control."
+    },
+    "Post-challenge Discard": {
+        "name": "Post-challenge Discard",
+        "powerModifier": 36,
+        "effect": "When this card resolves an engagement, remove it from play."
+    },
+    "Post-challenge Pluck": {
+        "name": "Post-challenge Pluck",
+        "powerModifier": -6,
+        "effect": "When this card resolves an engagement, discard the top card of a target deck."
+    },
+    "Removed Recollection": {
+        "name": "Removed Recollection",
+        "powerModifier": -8,
+        "effect": "When this card is removed from play, you may play a Thought from your discard pile with less cost."
+    },
+    "Removed Pluck": {
+        "name": "Removed Recollection",
+        "powerModifier": -6,
+        "effect": "When this card is removed from play, discard the top card of a target deck."
+    },
+    "Thoughtless Recollect": {
+        "name": "Thoughtless Recollect",
+        "powerModifier": -8,
+        "effect": "When you have no other Thoughts in play, this card may be played from the Discard pile on your turn."
+    },
+    "Thoughtless Recollect": {
+        "name": "Thoughtless Recollect",
+        "powerModifier": -8,
+        "effect": "When you have no other Thoughts in play, this card may be played from the Discard pile on your turn."
+    }
+}

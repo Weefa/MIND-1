@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }} - MIND</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ site.baseurl}}/stylesheets/css/normalize.css">
+        <link rel="stylesheet" href="{{ site.baseurl}}/stylesheets/css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <input type="checkbox" class="wl-toggle-aside" id="toggle-aside" />
+        <div class="wl-layout">
+            <div class="aside">
+                {% include nav.html %}
+            </div>
+            <div class="main" id="main">
+                <header class="wl-header">
+                    <div class="left">
+                        <label class="wl-aside-toggler" for="toggle-aside">&equiv;</label>
+                        <h1 class="wl-site-name"><abbr title="Mastery in Neural Defense">MIND</abbr> Prototype</h1>
+                    </div>
+                    <div class="right">
+                        <button onClick="window.print();" class="wl-button--print wl-button">Print</button>
+                    </div>
+                </header>
+                <div class="main-content" >
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+        {% include scripts.html %}
+    </body>
+</html>

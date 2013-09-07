@@ -1,0 +1,106 @@
+{
+    "type": "deck",
+    "name": "Blue Deck",
+    "card": [
+        {
+            "type": "thinker",
+            "name": "Blue Thinker",
+            "memory": 10,
+            "effect": "Remembrance"
+        },
+        {
+            "type": "thought",
+            "name": "Blue Thought 1",
+            "cost": 2,
+            "effect": "Active Power-amp"
+        },
+        {
+            "type": "thought",
+            "name": "Blue Thought 2",
+            "cost": 2,
+            "effect": "End-turn Disengage"
+        },
+        {
+            "type": "thought",
+            "name": "Blue Thought 3",
+            "cost": 5,
+            "effect": "Removed Recollection"
+        },
+        {
+            "type": "thought",
+            "name": "Blue Thought 4",
+            "cost": 3,
+            "effect": "Engaged Penalty"
+        },
+        {
+            "type": "thought",
+            "name": "Blue Thought 5",
+            "cost": 1
+        },
+        {
+            "type": "thought",
+            "name": "Blue Thought 6",
+            "cost": 1
+        },
+        {
+            "type": "thought",
+            "name": "Blue Thought 7",
+            "cost": 1
+        },
+        {
+            "type": "thought",
+            "name": "Blue Thought 8",
+            "cost": 1
+        },
+        {
+            "type": "thought",
+            "name": "Blue Thought 9",
+            "cost": 1
+        },
+        {
+            "type": "thought",
+            "name": "Blue Thought 10",
+            "cost": 1
+        },
+        {
+            "type": "intellect",
+            "effect": "Disengage"
+        },
+        {
+            "type": "intellect",
+            "effect": "End-turn Disengage"
+        },
+        {
+            "type": "intellect",
+            "effect": "Hand Decoy"
+        },
+        {
+            "type": "intellect",
+            "effect": "Power-down"
+        },
+        {
+            "type": "intellect",
+            "effect": "Negate Effect"
+        },
+        {
+            "type": "intellect",
+            "effect": "Negate Intellect"
+        },
+        {
+            "type": "intellect",
+            "effect": "Power-amp IV"
+        },
+        {
+            "type": "intellect",
+            "effect": "Power-amp X"
+        },
+        {
+            "type": "intellect",
+            "effect": "Recollection"
+        },
+        {
+            "type": "intellect",
+            "effect": "Thought Recollection"
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "Break Point Hand Limit": {
+        "name": "Break Point Hand Limit",
+        "cost": 3,
+        "effect": "Continuously double your own Break point and reduce your own hand limit to 3 cards."
+    },
+    "Counter Brace": {
+        "name": "Counter Brace",
+        "cost": 3,
+        "effect": "Temporarily increase target Thinker's Break point by the total Power of a target card."
+    },
+    "Continuous Overload": {
+        "name": "Continuous Overload",
+        "cost": 2,
+        "effect": "Continuously increase the Cost of all opposing Thoughts by 1."
+    },
+    "Disengage": {
+        "name": "Disengage",
+        "cost": 3,
+        "effect": "Immediately Disengage a target Thought or Group."
+    },
+    "Double Break Point": {
+        "name": "Double Break Point",
+        "cost": 4,
+        "effect": "Temporarily double a target Thinker's Break point."
+    },
+    "End-turn Disengage": {
+        "name": "End-turn Disengage",
+        "cost": 3,
+        "effect": "Continuously Disengage target Thought at the end of a Turn. If target is removed, remove this card."
+    },
+    "Hand Decoy": {
+        "name": "Hand Decoy",
+        "cost": 3,
+        "effect": "Immediately choose a card from your hand when a card would be removed and discard it instead."
+    },
+    "Misdirection": {
+        "name": "Misdirection",
+        "cost": 2,
+        "effect": "Immediately change the target of an engagement."
+    },
+    "Negate Effect": {
+        "name": "Negate Effect",
+        "cost": 2,
+        "effect": "Temporarily negate the effect of a target card in play."
+    },
+    "Negate Intellect": {
+        "name": "Negate Intellect",
+        "cost": 3,
+        "effect": "Immediately negate the effect of an Intellect in play and remove it."
+    },
+    "Power-amp IV": {
+        "name": "Power-amp IV",
+        "cost": 1,
+        "effect": "Temporarily increase the Power of all Thoughts you control by 4."
+    },
+    "Power-amp X": {
+        "name": "Power-amp X",
+        "cost": 3,
+        "effect": "Temporarily increase the Power of all Thoughts you control by 10."
+    },
+    "Power-down": {
+        "name": "Power-down",
+        "cost": 2,
+        "effect": "Temporarily halve the Power of a target card or Group."
+    },
+    "Power-drain": {
+        "name": "Power-drain",
+        "cost": 4,
+        "effect": "Temporarily reduce the Power of a target card to 0."
+    },
+    "Recall": {
+        "name": "Recall",
+        "cost": 2,
+        "effect": "Immediately return one target card in play back to the top of its respective deck."
+    },
+    "Recollection": {
+        "name": "Recollection",
+        "cost": 4,
+        "effect": "Immediately play any card from your discard pile."
+    },
+    "Thought Recollection": {
+        "name": "Thought Recollection",
+        "cost": 3,
+        "effect": "Immediately choose a Thought from a Thinker's discard pile and play it under that Thinker's control."
+    }
+}

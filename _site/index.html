@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Create Cards - MIND</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/stylesheets/css/normalize.css">
+        <link rel="stylesheet" href="/stylesheets/css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <input type="checkbox" class="wl-toggle-aside" id="toggle-aside" />
+        <div class="wl-layout">
+            <div class="aside">
+                <ul class="links">
+    <li class="link--title link">Game</li>
+    <li class="link"><a href="/index.html">Create Cards</a></li>
+    <li class="link"><a target="_blank" href="https://docs.google.com/document/d/1Q96cSirtThTdUsOhbWxy4vtIlZWOhRd8MyB44bYFt7Y/edit?usp=sharing">Rules</a></li>
+</ul>
+<ul class="links">
+    <li class="link--title link">Starter Decks</li>
+    <li class="link"><a href="/red.html">Red Deck</a></li>
+    <li class="link"><a href="/blue.html">Blue Deck</a></li>
+    <li class="link"><a target="_blank" href="/cerebral-deck.pdf">Cerebral Deck</a></li>
+</ul>
+<ul class="links">
+    <li class="link--title link">Contact</li>
+    <li class="link"><a href="mailto:reachme@miguel-perez.com">Email</a></li>
+    <li class="link"><a target="_blank" href="https://groups.google.com/forum/#!forum/mind-card-game">Forum</a></li>
+</ul>
+            </div>
+            <div class="main" id="main">
+                <header class="wl-header">
+                    <div class="left">
+                        <label class="wl-aside-toggler" for="toggle-aside">&equiv;</label>
+                        <h1 class="wl-site-name"><abbr title="Mastery in Neural Defense">MIND</abbr> Prototype</h1>
+                    </div>
+                    <div class="right">
+                        <button onClick="window.print();" class="wl-button--print wl-button">Print</button>
+                    </div>
+                </header>
+                <div class="main-content" >
+                    <div class="wl-card-shelf">
+    <div class="wl-create-card" data-type="thinker">
+        <div class="panel--left panel bd">
+            <button class="new wl-card--thinker wl-card">Create Thinker</button>
+            <div class="wl-card--new wl-card--thinker wl-card">
+                <div class="top">
+                    <div class="stats">
+                        <div class="stat--cost stat"><span class="label">Memory</span><span class="value">10</span></div>
+                        <div class="stat--power stat"><span class="label">Break</span><span class="value">20</span></div>
+                    </div>
+                    <div class="name">Name</div>
+                </div>
+                <div class="effect-wrapper">
+                    <div class="no-effect effect"><strong class="effect-name">Aenean ultricies</strong> - <span class="effect-description">Pellentesque habitant morbi tristique seamet quam egestas semper. Aenean ultricies placerat eleifend leo.</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="panel--right panel">
+            <div class="wl-create-form">
+                <div class="bd">
+                    <h2 class="title">Create Thinker <small><button class="close wl-text-button">&times;</button></small></h2>
+                    <form action="#" data-create="thought">
+                        <p class="wl-input">
+                            <label class="label" for="memory">Memory:</label>
+                            <input class="value" type="number" id="memory" name="memory" min="0" max="15" value="10" required />
+                        </p>                            
+                        <p class="wl-input">
+                            <label class="label" for="thought-name">Name:</label>
+                            <input class="value" type="text" id="thought-name" name="thought-name" placeholder="Name" maxlength="40" required />
+                        </p>
+                        <ul class="wl-effect-list">
+                            <li class="effect-item">
+                                <label class="effect">
+                                    <input class="radio" type="radio" name="card-effect" value="" data-power-cost="0" checked />
+                                    <span class="select">
+                                        <span class="name">No Effect</span>
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                        <p>
+                            <button type="submit" class="wl-button--block wl-button">Create</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wl-horizontal-scroller"></div>
+</div>
+<div class="wl-card-shelf">
+    <div class="wl-create-card" data-type="thought">
+        <div class="panel--left panel bd">
+            <button class="new wl-card">Create Thought</button>
+            <div class="wl-card--new wl-card">
+                <div class="top">
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="label">Thought</span>
+                        </div>
+                        <div class="stat--cost stat">
+                            <span class="label">Cost</span>
+                            <span class="value">1</span>
+                        </div>
+                        <div class="stat--power stat">
+                            <span class="label">Power</span>
+                            <span class="value">4</span>
+                        </div>
+                    </div>
+                    <div class="name">Name</div>
+                </div>
+                <div class="effect-wrapper">
+                    <div class="no-effect effect">
+                        <strong class="effect-name">Effect Name</strong> - <span class="effect-description">Pellentesque habitant morbi tristique seamet quam egestas semper. Aenean ultricies placerat eleifend leo.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel--right panel">
+            <div class="wl-create-form">
+                <div class="bd">
+                    <h2 class="title">Create Thought <small><button class="close wl-text-button">&times;</button></small></h2>
+                    <form action="#" data-create="thought">
+                        <p class="wl-input">
+                            <label class="label" for="thought-cost">Cost:</label>
+                            <input class="value" type="number" id="thought-cost" name="thought-cost" min="1" max="15" value="1" required />
+                        </p>                            
+                        <p class="wl-input">
+                            <label class="label" for="thought-name">Name:</label>
+                            <input class="value" type="text" id="thought-name" name="thought-name" placeholder="Name" maxlength="40" required />
+                        </p>
+                        <ul class="wl-effect-list">
+                            <li class="effect-item">
+                                <label class="effect">
+                                    <input class="radio" type="radio" name="card-effect" value="" data-power-cost="0" checked />
+                                    <span class="select">
+                                        <span class="name">No Effect</span>
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                        <p>
+                            <button type="submit" class="wl-button--block wl-button">Create</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wl-horizontal-scroller"></div>
+</div>
+<div class="wl-card-shelf">
+    <div class="wl-create-card" data-type="intellect">
+        <div class="panel--left panel bd">
+            <button class="new wl-card">Create Intellect</button>
+            <div class="wl-card--new wl-card">
+                <div class="top">
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="label">Intellect</span>
+                        </div>
+                        <div class="stat--cost stat">
+                            <span class="label">Cost</span>
+                            <span class="value">1</span>
+                        </div>
+                    </div>
+                    <div class="effect-name name">Name</div>
+                </div>
+                <div class="effect-wrapper">
+                    <div class="no-effect effect">
+                        <span class="effect-description">Pellentesque habitant morbi tristique seamet quam egestas semper. Aenean ultricies placerat eleifend leo.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel--right panel">
+            <div class="wl-create-form">
+                <div class="bd">
+                    <h2 class="title">Create Intellect <small><button class="close wl-text-button">&times;</button></small></h2>
+                    <form action="#" data-create="thought">
+                        <ul class="wl-effect-list--tall wl-effect-list">
+                            <li class="effect-item">
+                                <label class="effect">
+                                    <input class="radio" type="radio" name="card-effect" value="" data-power-cost="0" checked />
+                                    <span class="select">
+                                        <span class="name">No Effect</span>
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                        <p>
+                            <button type="submit" class="wl-button--block wl-button">Create</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wl-horizontal-scroller"></div>
+</div>
+
+                </div>
+            </div>
+        </div>
+        <script src="/js/vendor/jquery-1.9.1.min.js"></script>
+<script src="/js/vendor/underscore.js"></script>
+<script src="/js/vendor/linc.js"></script>
+<script src="/js/deckList.js"></script>
+<script src="/js/cardCreator.js"></script>
+<script src="/js/mind.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43480770-1', 'mindcardgame.com');
+  ga('send', 'pageview');
+</script>
+    </body>
+</html>

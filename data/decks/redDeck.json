@@ -1,0 +1,108 @@
+{
+    "type": "deck",
+    "name": "Red Deck",
+    "card": [
+        {
+            "type": "thinker",
+            "name": "Red Thinker",
+            "memory": 10,
+            "effect": "Recoil"
+        },
+        {
+            "type": "thought",
+            "name": "Red Thought 1",
+            "cost": 4,
+            "effect": "Removed Recollection"
+        },
+        {
+            "type": "thought",
+            "name": "Red Thought 2",
+            "cost": 3,
+            "effect": "End-turn Discard"
+        },
+        {
+            "type": "thought",
+            "name": "Red Thought 3",
+            "cost": 3,
+            "effect": "Post-challenge Discard"
+        },
+        {
+            "type": "thought",
+            "name": "Red Thought 4",
+            "cost": 2,
+            "effect": "Post-challenge Pluck"
+        },
+        {
+            "type": "thought",
+            "name": "Red Thought 5",
+            "cost": 2,
+            "effect": "Removed Pluck"
+        },
+        {
+            "type": "thought",
+            "name": "Red Thought 6",
+            "cost": 2,
+            "effect": "Thoughtless Recollect"
+        },
+        {
+            "type": "thought",
+            "name": "Red Thought 7",
+            "cost": 2
+        },
+        {
+            "type": "thought",
+            "name": "Red Thought 8",
+            "cost": 2
+        },
+        {
+            "type": "thought",
+            "name": "Red Thought 9",
+            "cost": 2
+        },
+        {
+            "type": "thought",
+            "name": "Red Thought 10",
+            "cost": 4
+        },
+        {
+            "type": "intellect",
+            "effect": "Break Point Hand Limit"
+        },
+        {
+            "type": "intellect",
+            "effect": "Counter Brace"
+        },
+        {
+            "type": "intellect",
+            "effect": "Disengage"
+        },
+        {
+            "type": "intellect",
+            "effect": "Double Break Point"
+        },
+        {
+            "type": "intellect",
+            "effect": "Misdirection"
+        },
+        {
+            "type": "intellect",
+            "effect": "Negate Effect"
+        },
+        {
+            "type": "intellect",
+            "effect": "Negate Intellect"
+        },
+        {
+            "type": "intellect",
+            "effect": "Power-down"
+        },
+        {
+            "type": "intellect",
+            "effect": "Recollection"
+        },
+        {
+            "type": "intellect",
+            "effect": "Thought Recollection"
+        }
+    ]
+}
