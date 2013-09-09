@@ -1,0 +1,185 @@
+
+//================================================================
+// Layout
+//================================================================
+
+.wl-layout {
+    position: relative;
+    transition: padding 0.25s;
+    .aside {
+        position: absolute;
+        left: -$aside-width - 2px;
+        top: 0;
+        height: 100%;
+        width: $aside-width;
+        border-right: solid 2px #000;
+        transition: left 0.25s;
+        .links {
+            margin: 0 0 1em;
+            padding-left: 0;
+            list-style: none;
+            border-top: dashed 1px #000;
+            &:first-child { border: none; }
+
+            .link {
+                margin: 0;
+                a {
+                    display: block;
+                    padding: 0.5em 1em;
+                    text-decoration: none;
+                    color: blue;
+                    &:hover { color: red; }
+                }
+            }
+            .link--title {
+                text-transform: uppercase;
+                padding: 1.5em 0.5em 1em;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.wl-toggle-aside {
+    display: none;
+    &:checked ~ .wl-layout {
+        padding-left: $aside-width + 2px;
+        .aside { left: 0; }
+    }
+}
+
+.wl-aside-toggler {
+    display: block;
+    margin-right: 0.25em;
+    width: 37px;
+    height: 37px;
+    float: left;
+    color: #00F;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 3em;
+    line-height: 30px;
+    cursor: pointer;
+    &:hover { color: red; }
+}
+
+@media print {
+    .wl-layout {
+        padding-left: 0 !important;
+        .aside { display: none; }
+        .main { min-width: 0; }
+    }
+}
+
+
+//================================================================
+// App header
+//================================================================
+
+.wl-header {
+    padding: 1em;
+    border-bottom: 1px solid #000;
+    background: #fff;
+    overflow: hidden;
+    z-index: 200;
+
+    .right {
+        float: right;
+    }
+
+    .left {
+        float: left;
+        white-space: nowrap;
+    }
+
+    .wl-site-name {
+        line-height: 37px;
+        vertical-align: middle;
+    }
+
+
+    .links {
+        margin: 0 1.5em;
+        padding: 0;
+        float: left;
+        li {
+            margin: 0 1em;
+            padding: 0 0.5em;
+            list-style: none;
+            display: inline;
+
+            a {
+                font-weight: bold;
+                text-decoration: none;
+                transition: color 0.1s;
+                font-size: 9pt;
+                line-height: 37px;
+                vertical-align: middle;
+                &:hover { text-decoration: underline; }
+            }
+        }
+    }
+}
+
+.wl-site-name {
+    margin: 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+}
+
+@media print {
+    .wl-header { display: none; }
+}
+
+//================================================================
+// Card Self
+//================================================================
+.wl-card-shelf {
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+    page-break-after: always;
+    .wl-card {
+        margin: 0 auto;
+    }
+    @include respond-to(medium){
+        position: relative;
+        overflow: hidden;
+        .wl-card {
+            margin: 0;
+        }
+        .wl-card--thought {
+
+        }
+    }
+    @include respond-to(print){
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+        border: none;
+        .bd { margin: 0; }
+        .wl-horizontal-scroller { padding: 0; }
+    }
+}
+
+//================================================================
+// :: Horizontal Scroller
+//================================================================
+
+.wl-horizontal-scroller {
+    overflow: auto;
+    @include respond-to(medium){
+        white-space: nowrap;
+        & > * {
+            white-space: normal;
+            display: inline-block;
+        }
+    }
+    @include respond-to(print){
+        padding: 0;
+        white-space: normal;
+    }
+}
+
+

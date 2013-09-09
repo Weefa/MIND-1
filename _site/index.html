@@ -10,8 +10,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="/stylesheets/css/normalize.css">
         <link rel="stylesheet" href="/stylesheets/css/main.css">
+        <!--[if (lt IE 9)&(!IEMobile)]>
+            <link rel="stylesheet" type="text/css" media="all" href="/resources/weblinc/stylesheets/css/no-media-queries.css" />
+        <![endif]-->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -48,7 +50,7 @@
                 <div class="main-content" >
                     <div class="wl-card-shelf">
     <div class="wl-create-card" data-type="thinker">
-        <div class="panel--left panel bd">
+        <div class="panel--left panel">
             <button class="new wl-card--thinker wl-card">Create Thinker</button>
             <div class="wl-card--new wl-card--thinker wl-card">
                 <div class="top">
@@ -65,32 +67,30 @@
         </div>
         <div class="panel--right panel">
             <div class="wl-create-form">
-                <div class="bd">
+                <form action="#" data-create="thought">
                     <h2 class="title">Create Thinker <small><button class="close wl-text-button">&times;</button></small></h2>
-                    <form action="#" data-create="thought">
-                        <p class="wl-input">
-                            <label class="label" for="memory">Memory:</label>
-                            <input class="value" type="number" id="memory" name="memory" min="0" max="15" value="10" required />
-                        </p>                            
-                        <p class="wl-input">
-                            <label class="label" for="thought-name">Name:</label>
-                            <input class="value" type="text" id="thought-name" name="thought-name" placeholder="Name" maxlength="40" required />
-                        </p>
-                        <ul class="wl-effect-list">
-                            <li class="effect-item">
-                                <label class="effect">
-                                    <input class="radio" type="radio" name="card-effect" value="" data-power-cost="0" checked />
-                                    <span class="select">
-                                        <span class="name">No Effect</span>
-                                    </span>
-                                </label>
-                            </li>
-                        </ul>
-                        <p>
-                            <button type="submit" class="wl-button--block wl-button">Create</button>
-                        </p>
-                    </form>
-                </div>
+                    <p class="wl-input">
+                        <label class="label" for="memory">Memory:</label>
+                        <input class="value" type="number" id="memory" name="memory" min="0" max="15" value="10" required />
+                    </p>                            
+                    <p class="wl-input">
+                        <label class="label" for="thought-name">Name:</label>
+                        <input class="value" type="text" id="thought-name" name="thought-name" placeholder="Name" maxlength="40" required />
+                    </p>
+                    <ul class="wl-effect-list">
+                        <li class="effect-item">
+                            <label class="effect">
+                                <input class="radio" type="radio" name="card-effect" value="" data-power-cost="0" checked />
+                                <span class="select">
+                                    <span class="name">No Effect</span>
+                                </span>
+                            </label>
+                        </li>
+                    </ul>
+                    <p>
+                        <button type="submit" class="wl-button--block wl-button">Create</button>
+                    </p>
+                </form>
             </div>
         </div>
     </div>
@@ -126,32 +126,30 @@
         </div>
         <div class="panel--right panel">
             <div class="wl-create-form">
-                <div class="bd">
+                <form action="#" data-create="thought">
                     <h2 class="title">Create Thought <small><button class="close wl-text-button">&times;</button></small></h2>
-                    <form action="#" data-create="thought">
-                        <p class="wl-input">
-                            <label class="label" for="thought-cost">Cost:</label>
-                            <input class="value" type="number" id="thought-cost" name="thought-cost" min="1" max="15" value="1" required />
-                        </p>                            
-                        <p class="wl-input">
-                            <label class="label" for="thought-name">Name:</label>
-                            <input class="value" type="text" id="thought-name" name="thought-name" placeholder="Name" maxlength="40" required />
-                        </p>
-                        <ul class="wl-effect-list">
-                            <li class="effect-item">
-                                <label class="effect">
-                                    <input class="radio" type="radio" name="card-effect" value="" data-power-cost="0" checked />
-                                    <span class="select">
-                                        <span class="name">No Effect</span>
-                                    </span>
-                                </label>
-                            </li>
-                        </ul>
-                        <p>
-                            <button type="submit" class="wl-button--block wl-button">Create</button>
-                        </p>
-                    </form>
-                </div>
+                    <p class="wl-input">
+                        <label class="label" for="thought-cost">Cost:</label>
+                        <input class="value" type="number" id="thought-cost" name="thought-cost" min="1" max="15" value="1" required />
+                    </p>                            
+                    <p class="wl-input">
+                        <label class="label" for="thought-name">Name:</label>
+                        <input class="value" type="text" id="thought-name" name="thought-name" placeholder="Name" maxlength="40" required />
+                    </p>
+                    <ul class="wl-effect-list">
+                        <li class="effect-item">
+                            <label class="effect">
+                                <input class="radio" type="radio" name="card-effect" value="" data-power-cost="0" checked />
+                                <span class="select">
+                                    <span class="name">No Effect</span>
+                                </span>
+                            </label>
+                        </li>
+                    </ul>
+                    <p>
+                        <button type="submit" class="wl-button--block wl-button">Create</button>
+                    </p>
+                </form>
             </div>
         </div>
     </div>
@@ -183,24 +181,22 @@
         </div>
         <div class="panel--right panel">
             <div class="wl-create-form">
-                <div class="bd">
+                <form action="#" data-create="thought">
                     <h2 class="title">Create Intellect <small><button class="close wl-text-button">&times;</button></small></h2>
-                    <form action="#" data-create="thought">
-                        <ul class="wl-effect-list--tall wl-effect-list">
-                            <li class="effect-item">
-                                <label class="effect">
-                                    <input class="radio" type="radio" name="card-effect" value="" data-power-cost="0" checked />
-                                    <span class="select">
-                                        <span class="name">No Effect</span>
-                                    </span>
-                                </label>
-                            </li>
-                        </ul>
-                        <p>
-                            <button type="submit" class="wl-button--block wl-button">Create</button>
-                        </p>
-                    </form>
-                </div>
+                    <ul class="wl-effect-list--tall wl-effect-list">
+                        <li class="effect-item">
+                            <label class="effect">
+                                <input class="radio" type="radio" name="card-effect" value="" data-power-cost="0" checked />
+                                <span class="select">
+                                    <span class="name">No Effect</span>
+                                </span>
+                            </label>
+                        </li>
+                    </ul>
+                    <p>
+                        <button type="submit" class="wl-button--block wl-button">Create</button>
+                    </p>
+                </form>
             </div>
         </div>
     </div>

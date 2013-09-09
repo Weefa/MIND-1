@@ -1,0 +1,32 @@
+
+// ==========================================================================
+// Variables
+// ==========================================================================
+$white-space: 0.05in;
+$card-height: 3.15in;
+$card-width: 2.15in;
+$aside-width: 150px;
+
+// ==========================================================================
+// @mixin respond-to
+// ==========================================================================
+$break-medium: 960px;
+$media-query-support: true !default;
+ 
+@mixin respond-to($media: medium, $mq-support: $media-query-support) {
+  @if $mq-support == true {
+    // output content wrapped in media queries
+    @if $media == medium {
+      @media screen and (min-width: #{$break-medium}) { @content; }
+    }
+    @else if $media == print {
+      @media print { @content; }
+    }
+  }
+  @elseif $mq-support == false {
+    // just output the content
+    @if $media == medium {
+      @content;
+    }
+  }
+}

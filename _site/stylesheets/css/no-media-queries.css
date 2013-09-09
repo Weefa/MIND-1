@@ -500,11 +500,6 @@ table {
 /* line 5, ../scss/base.scss */
 body {
   font-family: 'Droid Sans', sans-serif; }
-  @media print {
-    /* line 5, ../scss/base.scss */
-    body {
-      margin: 0;
-      padding: 0; } }
 
 /* line 18, ../scss/base.scss */
 .wl-input .label {
@@ -700,48 +695,24 @@ body {
 .wl-card-shelf {
   border-bottom: 1px solid #000;
   overflow: hidden;
-  page-break-after: always; }
+  page-break-after: always;
+  position: relative;
+  overflow: hidden; }
   /* line 143, ../scss/layout.scss */
   .wl-card-shelf .wl-card {
     margin: 0 auto; }
-  @media screen and (min-width: 960px) {
-    /* line 139, ../scss/layout.scss */
-    .wl-card-shelf {
-      position: relative;
-      overflow: hidden; }
-      /* line 149, ../scss/layout.scss */
-      .wl-card-shelf .wl-card {
-        margin: 0; } }
-  @media print {
-    /* line 139, ../scss/layout.scss */
-    .wl-card-shelf {
-      min-height: 0;
-      margin: 0;
-      padding: 0;
-      border: none; }
-      /* line 161, ../scss/layout.scss */
-      .wl-card-shelf .bd {
-        margin: 0; }
-      /* line 162, ../scss/layout.scss */
-      .wl-card-shelf .wl-horizontal-scroller {
-        padding: 0; } }
+  /* line 149, ../scss/layout.scss */
+  .wl-card-shelf .wl-card {
+    margin: 0; }
 
 /* line 170, ../scss/layout.scss */
 .wl-horizontal-scroller {
-  overflow: auto; }
-  @media screen and (min-width: 960px) {
-    /* line 170, ../scss/layout.scss */
-    .wl-horizontal-scroller {
-      white-space: nowrap; }
-      /* line 174, ../scss/layout.scss */
-      .wl-horizontal-scroller > * {
-        white-space: normal;
-        display: inline-block; } }
-  @media print {
-    /* line 170, ../scss/layout.scss */
-    .wl-horizontal-scroller {
-      padding: 0;
-      white-space: normal; } }
+  overflow: auto;
+  white-space: nowrap; }
+  /* line 174, ../scss/layout.scss */
+  .wl-horizontal-scroller > * {
+    white-space: normal;
+    display: inline-block; }
 
 /* line 6, ../scss/cards.scss */
 .wl-card {
@@ -907,26 +878,21 @@ body {
 /* line 45, ../scss/create.scss */
 .wl-create-card.is-expanded .wl-create-form {
   opacity: 1; }
-@media screen and (min-width: 960px) {
-  /* line 49, ../scss/create.scss */
-  .wl-create-card .panel {
-    padding: 1em;
-    width: 340px;
-    height: 340px;
-    float: left; }
-  /* line 55, ../scss/create.scss */
-  .wl-create-card .panel--right {
-    border-top: none;
-    border-right: 1px dashed #000; }
-  /* line 60, ../scss/create.scss */
-  .wl-create-card.is-expanded .panel--right {
-    width: 340px;
-    border-bottom: none;
-    border-left: 1px dashed #000; } }
-@media print {
-  /* line 6, ../scss/create.scss */
-  .wl-create-card {
-    display: none !important; } }
+/* line 49, ../scss/create.scss */
+.wl-create-card .panel {
+  padding: 1em;
+  width: 340px;
+  height: 340px;
+  float: left; }
+/* line 55, ../scss/create.scss */
+.wl-create-card .panel--right {
+  border-top: none;
+  border-right: 1px dashed #000; }
+/* line 60, ../scss/create.scss */
+.wl-create-card.is-expanded .panel--right {
+  width: 340px;
+  border-bottom: none;
+  border-left: 1px dashed #000; }
 
 /* line 78, ../scss/create.scss */
 .wl-create-form {
