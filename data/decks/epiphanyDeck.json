@@ -5,14 +5,14 @@
         {
             "type": "thinker",
             "name": "Chronos",
-            "memory": 12,
+            "memory": 14,
             "effect": "Epiphany"
         },
         {
             "type": "thought",
-            "name": "Time Reaper",
+            "name": "Time Traveler",
             "cost": 2,
-            "effect": "Challenger Thought-Eater"
+            "effect": "Elusive Thought"
         },
         {
             "type": "thought",
@@ -28,15 +28,15 @@
         },
         {
             "type": "thought",
-            "name": "Time Summoner",
-            "cost": 4,
-            "effect": "Removed Recollection"
+            "name": "Time Reaper",
+            "cost": 2,
+            "effect": "Challenger Thought-Eater"
         },
         {
             "type": "thought",
-            "name": "Time Traveler",
-            "cost": 2,
-            "effect": "Elusive Thought"
+            "name": "Time Summoner",
+            "cost": 4,
+            "effect": "Removed Recollection"
         },
         {
             "type": "thought",
@@ -52,23 +52,27 @@
         },
         {
             "type": "thought",
-            "name": "Time Gazer",
-            "cost": 2,
-            "effect": "Foreboding Engagement"
-        },
-        {
-            "type": "thought",
             "name": "Chronos Minion I",
             "cost": 2
         },
         {
             "type": "thought",
             "name": "Chronos Minion II",
-            "cost": 4
+            "cost": 2
         },
         {
             "type": "thought",
             "name": "Chronos Minion III",
+            "cost": 2
+        },
+        {
+            "type": "thought",
+            "name": "Chronos Minion IV",
+            "cost": 2
+        },
+        {
+            "type": "thought",
+            "name": "Chronos Minion V",
             "cost": 2
         },
         {
@@ -81,11 +85,7 @@
         },
         {
             "type": "intellect",
-            "effect": "Memory Loss"
-        },
-        {
-            "type": "intellect",
-            "effect": "Mind Cannon"
+            "effect": "Thought Cannon"
         },
         {
             "type": "intellect",
@@ -94,6 +94,10 @@
         {
             "type": "intellect",
             "effect": "Recollection"
+        },
+        {
+            "type": "intellect",
+            "effect": "Thought Tribute"
         },
         {
             "type": "intellect",

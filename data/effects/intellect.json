@@ -85,18 +85,23 @@
         "effect": "Immediately choose three cards from your deck, discard them, and shuffle your deck."
     },
     "Thought Cannon": {
-        "name": "Mind Cannon",
+        "name": "Thought Cannon",
         "cost": 3,
         "effect": "Immediately choose a Thought or Group you control and remove it from play, engage target Thinker with a power equal to the total Power equal to the chosen Thought or Group."
     },
     "Recollection": {
         "name": "Recollection",
-        "cost": 4,
+        "cost": 5,
         "effect": "Immediately play any card from your discard pile."
+    },
+    "Thought Tribute": {
+        "name": "Thought Tribute",
+        "cost": 4,
+        "effect": "Immediately remove a Thought you crontrol and play any card from your discard pile with less cost."
     },
     "Thought Recollection": {
         "name": "Thought Recollection",
-        "cost": 3,
+        "cost": 4,
         "effect": "Immediately choose a Thought from a Thinker's discard pile and play it under that Thinker's control."
     }
 }

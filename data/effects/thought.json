@@ -67,7 +67,7 @@
     "Elusive Thought": {
         "name": "Elusive Thought",
         "powerModifier": 36,
-        "effect": "When this card is played from your hand, immedeatly remove it from play."
+        "effect": "When this card is played from your hand, immediately remove it from play."
     },
     "Foreboding Sacrafice": {
         "name": "Elusive Thought",
@@ -75,14 +75,9 @@
         "effect": "When this Thought or Group would be removed, you may instead discard the top five cards of your deck."
     },
     "Foreboding Engagement": {
-        "name": "Post-challenge Discard",
-        "powerModifier": 34,
+        "name": "Foreboding Engagement",
+        "powerModifier": 25,
         "effect": "When this card resolves an engagement, discard the top three cards of your deck."
-    },
-    "Foreboding Engagement": {
-        "name": "Elusive Thought",
-        "powerModifier": -8,
-        "effect": "When this Thought or Group would be engaged, discard the top three cards of your deck."
     },
     "Thoughtless Recollect": {
         "name": "Thoughtless Recollect",
