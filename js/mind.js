@@ -28,7 +28,8 @@ var MIND = (function($){
                 thinker: "/data/effects/thinker.json",
                 thought: "/data/effects/thought.json",
                 blueDeck: "/data/decks/blueDeck.json",
-                redDeck: "/data/decks/redDeck.json"
+                redDeck: "/data/decks/redDeck.json",
+                epiphanyDeck: "/data/decks/epiphanyDeck.json"
             };
 
         loadData(files, function(data){

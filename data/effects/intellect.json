@@ -47,17 +47,17 @@
     "Negate Intellect": {
         "name": "Negate Intellect",
         "cost": 3,
-        "effect": "Immediately negate the effect of an Intellect in play and remove it."
+        "effect": "Immediately negate the effect of an Intellect, including Cerebral Intellect, in play and remove it."
     },
     "Power-amp IV": {
         "name": "Power-amp IV",
         "cost": 1,
-        "effect": "Temporarily increase the Power of all Thoughts you control by 4."
+        "effect": "Temporarily increase the Power of all target Thinker's Thoughts by 4."
     },
     "Power-amp X": {
         "name": "Power-amp X",
-        "cost": 3,
-        "effect": "Temporarily increase the Power of all Thoughts you control by 10."
+        "cost": 4,
+        "effect": "Temporarily increase the Power of all target Thinker's Thoughts by 10."
     },
     "Power-down": {
         "name": "Power-down",
@@ -73,6 +73,21 @@
         "name": "Recall",
         "cost": 2,
         "effect": "Immediately return one target card in play back to the top of its respective deck."
+    },
+    "Focus Recovery": {
+        "name": "Focus Recovery",
+        "cost": 8,
+        "effect": "Immediately gain 1 Focus Counter. This card can only be played as a response to loosing a Focus Counter."
+    },
+    "Memory Loss": {
+        "name": "Memory Loss",
+        "cost": 2,
+        "effect": "Immediately choose three cards from your deck, discard them, and shuffle your deck."
+    },
+    "Thought Cannon": {
+        "name": "Mind Cannon",
+        "cost": 3,
+        "effect": "Immediately choose a Thought or Group you control and remove it from play, engage target Thinker with a power equal to the total Power equal to the chosen Thought or Group."
     },
     "Recollection": {
         "name": "Recollection",

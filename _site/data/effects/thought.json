@@ -14,6 +14,11 @@
         "powerModifier": -4,
         "effect": "While resolving an engagement, the Power of this Thought doubles."
     },
+    "Challenger Thought-Eater": {
+        "name": "Challenger Thought-Eater",
+        "powerModifier": -8,
+        "effect": "While resolving an engagement, you may remove any number of Thoughts you control to increase the Power of this Thought by the total Power of the discarded Thought(s)."
+    },
     "Direct-challenge Power-up": {
         "name": "Direct-challenge Power-up",
         "powerModifier": -4,
@@ -26,17 +31,17 @@
     },
     "End-turn Discard": {
         "name": "End-turn Discard",
-        "powerModifier": 34,
+        "powerModifier": 30,
         "effect": "When a turn ends, remove this card from play."
     },
     "Engaged Penalty": {
         "name": "Engaged Penalty",
         "powerModifier": 30,
-        "effect": "While Engaged, you may only Disengage this Thought or Group by removing one other Thought you control."
+        "effect": "While Engaged, you may only Disengage this Thought or Group, at the begining of your turn, by removing one other Thought you control."
     },
     "Post-challenge Discard": {
         "name": "Post-challenge Discard",
-        "powerModifier": 36,
+        "powerModifier": 34,
         "effect": "When this card resolves an engagement, remove it from play."
     },
     "Post-challenge Pluck": {
@@ -58,6 +63,26 @@
         "name": "Thoughtless Recollect",
         "powerModifier": -8,
         "effect": "When you have no other Thoughts in play, this card may be played from the Discard pile on your turn."
+    },
+    "Elusive Thought": {
+        "name": "Elusive Thought",
+        "powerModifier": 36,
+        "effect": "When this card is played from your hand, immedeatly remove it from play."
+    },
+    "Foreboding Sacrafice": {
+        "name": "Elusive Thought",
+        "powerModifier": -8,
+        "effect": "When this Thought or Group would be removed, you may instead discard the top five cards of your deck."
+    },
+    "Foreboding Engagement": {
+        "name": "Post-challenge Discard",
+        "powerModifier": 34,
+        "effect": "When this card resolves an engagement, discard the top three cards of your deck."
+    },
+    "Foreboding Engagement": {
+        "name": "Elusive Thought",
+        "powerModifier": -8,
+        "effect": "When this Thought or Group would be engaged, discard the top three cards of your deck."
     },
     "Thoughtless Recollect": {
         "name": "Thoughtless Recollect",

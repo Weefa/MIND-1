@@ -1,10 +1,14 @@
 {
     "Recoil": {
         "name": "Recoil",
-        "effect": "When a Thought or Group engages you and does not break a Focus counter, remove it from play."
+        "effect": "When a Thought or Group engages you and does not break a Focus Counter, remove it from play."
     },
     "Remembrance": {
         "name": "Remembrance",
-        "effect": "When you lose a Focus counter, you may search your Discard for a card and add it to your hand."
+        "effect": "When you lose a Focus Counter, you may search your Discard for a card and add it to your hand."
+    },
+    "Epiphany": {
+    	"name": "Epiphany",
+    	"effect": "When a turn ends you may play any number of Thoughts from your discard pile that where removed this turn and immedeatly destroy one of your own Focus Counters."
     }
 }
