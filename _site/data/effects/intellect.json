@@ -103,5 +103,40 @@
         "name": "Thought Recollection",
         "cost": 4,
         "effect": "Immediately choose a Thought from a Thinker's discard pile and play it under that Thinker's control."
+    },
+    "Intellect Break": {
+        "name": "Intellect Break",
+        "cost": 2,
+        "effect": "Immediately negate and remove a single target Thinker's Intellect in play; target Thinker may discard the top 3 cards of their deck to negate this card."
+    },
+    "Thought Break": {
+        "name": "Thought Break",
+        "cost": 2,
+        "effect": "Immediately remove a single target Thinker's Thought in play; target Thinker may discard the top 3 cards of their deck to negate this card."
+    },
+    "Engagement Break": {
+        "name": "Engagement Break",
+        "cost": 2,
+        "effect": "Immediately negate the resolution of an engagement; any Thinker may discard the top 3 cards of their deck to negate this card."
+    },
+    "Ready Break": {
+        "name": "Ready Break",
+        "cost": 2,
+        "effect": "Immediately engage a single target Thinker's Thought or Group in play; target Thinker may discard the top 3 cards of their deck to negate this card."
+    },
+    "Reload Consciousness": {
+        "name": "Reload Consciousness",
+        "cost": 4,
+        "effect": "Immediately discard the hand of all Thinkers. All Thinkers then draw the same number of cards they discarded from their deck."
+    },
+    "Amnesia Blast": {
+        "name": "Amnesia Blast",
+        "cost": 8,
+        "effect": "Immediately discard the hand of target Thinker whos discard pile contains 15 or more cards."
+    },
+    "Removal Amnesia": {
+        "name": "Removal Amnesia",
+        "cost": 4,
+        "effect": "Temporarily discard the top card of target Thinker's deck when a card they own is removed from play."
     }
 }

@@ -1,82 +1,85 @@
 {
     "type": "deck",
-    "name": "Blue Deck",
+    "name": "Overwhelm Deck",
     "card": [
         {
             "type": "thinker",
-            "name": "Blue Thinker",
-            "memory": 10,
-            "effect": "Remembrance"
+            "name": "Overwhelm Thinker",
+            "memory": 15,
+            "effect": "Overwhelm"
         },
         {
             "type": "thought",
-            "name": "Blue Thought 1",
+            "name": "Overwhelm I",
             "cost": 2,
             "effect": "Active Power-amp"
         },
         {
             "type": "thought",
-            "name": "Blue Thought 2",
+            "name": "Overwhelm II",
             "cost": 2,
-            "effect": "End-turn Disengage"
+            "effect": "Challenger Thought-Eater"
         },
         {
             "type": "thought",
-            "name": "Blue Thought 3",
-            "cost": 5,
-            "effect": "Removed Recollection"
+            "name": "Overwhelm III",
+            "cost": 1,
+            "effect": "End-turn Discard"
         },
         {
             "type": "thought",
-            "name": "Blue Thought 4",
-            "cost": 3,
-            "effect": "Engaged Penalty"
+            "name": "Overwhelm IV",
+            "cost": 1,
+            "effect": "Post-challenge Discard"
         },
         {
             "type": "thought",
-            "name": "Blue Thought 5",
-            "cost": 1
+            "name": "Minion I",
+            "cost": 2
         },
         {
             "type": "thought",
-            "name": "Blue Thought 6",
-            "cost": 1
+            "name": "Minion II",
+            "cost": 2
         },
         {
             "type": "thought",
-            "name": "Blue Thought 7",
-            "cost": 1
+            "name": "Minion III",
+            "cost": 2
         },
         {
-            "type": "thought",
+            "type": "Minion IV",
             "name": "Blue Thought 8",
-            "cost": 1
+            "cost": 2
         },
         {
             "type": "thought",
-            "name": "Blue Thought 9",
-            "cost": 1
+            "name": "Minion V",
+            "cost": 2
         },
         {
             "type": "thought",
-            "name": "Blue Thought 10",
-            "cost": 1
+            "name": "Minion VI",
+            "cost": 2
+        },
+        {
+            "type": "thought",
+            "name": "Minion VII",
+            "cost": 2
+        },
+        {
+            "type": "thought",
+            "name": "Minion VIII",
+            "cost": 2
+        },
+        {
+            "type": "thought",
+            "name": "Minion IX",
+            "cost": 2
         },
         {
             "type": "intellect",
-            "effect": "Disengage"
-        },
-        {
-            "type": "intellect",
-            "effect": "End-turn Disengage"
-        },
-        {
-            "type": "intellect",
-            "effect": "Hand Decoy"
-        },
-        {
-            "type": "intellect",
-            "effect": "Power-down"
+            "effect": "Recall"
         },
         {
             "type": "intellect",

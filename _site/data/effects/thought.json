@@ -1,7 +1,7 @@
 {
     "Active Aggression": {
         "name": "Active Aggression",
-        "powerModifier": 8,
+        "powerModifier": 10,
         "effect": "While in play, this Thought or Group must declare an engagement every turn if able."
     },
     "Active Power-amp": {
@@ -11,7 +11,7 @@
     },
     "Challenger Power-up": {
         "name": "Challenger Power-up",
-        "powerModifier": -4,
+        "powerModifier": -2,
         "effect": "While resolving an engagement, the Power of this Thought doubles."
     },
     "Challenger Thought-Eater": {
@@ -21,8 +21,8 @@
     },
     "Direct-challenge Power-up": {
         "name": "Direct-challenge Power-up",
-        "powerModifier": -4,
-        "effect": "While engaging a Thinker, the Power of this Thought doubles."
+        "powerModifier": -2,
+        "effect": "While engaging a card with a Break Point higher than the Power of this Thought, the Power of this Thought triples."
     },
     "End-turn Disengage": {
         "name": "End-turn Disengage",
@@ -31,17 +31,17 @@
     },
     "End-turn Discard": {
         "name": "End-turn Discard",
-        "powerModifier": 30,
+        "powerModifier": 26,
         "effect": "When a turn ends, remove this card from play."
     },
     "Engaged Penalty": {
         "name": "Engaged Penalty",
-        "powerModifier": 30,
+        "powerModifier": 26,
         "effect": "While Engaged, you may only Disengage this Thought or Group, at the begining of your turn, by removing one other Thought you control."
     },
     "Post-challenge Discard": {
         "name": "Post-challenge Discard",
-        "powerModifier": 34,
+        "powerModifier": 30,
         "effect": "When this card resolves an engagement, remove it from play."
     },
     "Post-challenge Pluck": {
@@ -55,7 +55,7 @@
         "effect": "When this card is removed from play, you may play a Thought from your discard pile with less cost."
     },
     "Removed Pluck": {
-        "name": "Removed Recollection",
+        "name": "Removed Pluck",
         "powerModifier": -6,
         "effect": "When this card is removed from play, discard the top card of a target deck."
     },
@@ -70,7 +70,7 @@
         "effect": "When this card is played from your hand, immediately remove it from play."
     },
     "Foreboding Sacrafice": {
-        "name": "Elusive Thought",
+        "name": "Foreboding Sacrafice",
         "powerModifier": -8,
         "effect": "When this Thought or Group would be removed, you may instead discard the top five cards of your deck."
     },
@@ -83,5 +83,30 @@
         "name": "Thoughtless Recollect",
         "powerModifier": -8,
         "effect": "When you have no other Thoughts in play, this card may be played from the Discard pile on your turn."
+    },
+    "Discard Power-up": {
+        "name": "Discard Power-up",
+        "powerModifier": -4,
+        "effect": "Increase the Power of this card by 2 for every card in target Thinker's discard pile."
+    },
+    "Removed Amnesia": {
+        "name": "Removed Amnesia",
+        "powerModifier": -6,
+        "effect": "When this card is removed from play, discard the top 3 cards of target Thinker's deck."
+    },
+    "Sacrafice Amnesia": {
+        "name": "Sacrafice Amnesia",
+        "powerModifier": -6,
+        "effect": "When is card is played, you remove one of your own Thoughts in play and discard the top 3 cards of target Thinker's deck."
+    },
+    "Amnesia Engagement": {
+        "name": "Amnesia Engagement",
+        "powerModifier": -6,
+        "effect": "When this card resolves an engagement, discard the top card of target Thinker's deck."
+    },
+    "Removed Discard": {
+        "name": "Removed Discard",
+        "powerModifier": -2,
+        "effect": "When this card is removed from play, all Thinkers must discard 1 card from their hand."
     }
 }

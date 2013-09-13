@@ -140,6 +140,7 @@ Linc.add('cardCreator', function () {
 
 
 Linc.add('delete', function () {
+    if(!$('.wl-create-card').length) return;
     $('.wl-horizontal-scroller .wl-card').each(function(i){
         var $this = $(this);
         $this

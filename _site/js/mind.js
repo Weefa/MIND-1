@@ -27,9 +27,10 @@ var MIND = (function($){
                 intellect: "/data/effects/intellect.json",
                 thinker: "/data/effects/thinker.json",
                 thought: "/data/effects/thought.json",
-                blueDeck: "/data/decks/blueDeck.json",
-                redDeck: "/data/decks/redDeck.json",
-                epiphanyDeck: "/data/decks/epiphanyDeck.json"
+                overwhelmDeck: "/data/decks/overwhelmDeck.json",
+                counterDeck: "/data/decks/counterDeck.json",
+                sacrificeDeck: "/data/decks/sacrificeDeck.json",
+                amnesiaDeck: "/data/decks/amnesiaDeck.json"
             };
 
         loadData(files, function(data){
@@ -47,7 +48,6 @@ var MIND = (function($){
                 $.each(type, function(x){
                     if(card[i].type === type[x]){
                         result.push(card[i]);
-
                     }
                 });
             } else {
