@@ -7,7 +7,7 @@
     "Active Power-amp": {
         "name": "Active Power-amp",
         "powerModifier": -6,
-        "effect": "While in play, increase the Power all of your own Thoughts in play by 4."
+        "effect": "While in play, increase the Power all of your other Thoughts in play by 4."
     },
     "Challenger Power-up": {
         "name": "Challenger Power-up",
@@ -87,7 +87,7 @@
     "Discard Power-up": {
         "name": "Discard Power-up",
         "powerModifier": -4,
-        "effect": "Increase the Power of this card by 2 for every card in target Thinker's discard pile."
+        "effect": "While in play, increase the Power of this card by 3 for every card in target Thinker's discard pile."
     },
     "Removed Amnesia": {
         "name": "Removed Amnesia",
@@ -97,7 +97,7 @@
     "Sacrafice Amnesia": {
         "name": "Sacrafice Amnesia",
         "powerModifier": -6,
-        "effect": "When is card is played, you remove one of your own Thoughts in play and discard the top 3 cards of target Thinker's deck."
+        "effect": "When is card is played, you may remove one of your own Thoughts in play and discard the top 3 cards of target Thinker's deck."
     },
     "Amnesia Engagement": {
         "name": "Amnesia Engagement",

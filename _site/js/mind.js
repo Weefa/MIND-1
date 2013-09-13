@@ -92,7 +92,7 @@ var MIND = (function($){
 
         if(card.type === 'intellect' && typeof MIND.data.intellect[card.effect] !== "undefined") {
             card.cost = MIND.data.intellect[card.effect].cost;
-            card.name = card.effect;
+            if (card.name === 'No Name') card.name = card.effect;
         }
 
         if(card.type === 'thinker') {
