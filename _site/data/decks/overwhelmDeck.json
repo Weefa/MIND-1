@@ -34,6 +34,12 @@
         },
         {
             "type": "thought",
+            "name": "Overwhelm V",
+            "cost": 3,
+            "effect": "Removed Recollection"
+        },
+        {
+            "type": "thought",
             "name": "Minion I",
             "cost": 2
         },
