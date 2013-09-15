@@ -138,5 +138,55 @@
         "name": "Removal Amnesia",
         "cost": 4,
         "effect": "Temporarily discard the top card of target Thinker's deck when a card they own is removed from play."
+    },
+    "Conflict Mark": {
+        "name": "Conflict Mark",
+        "cost": 2,
+        "effect": "Continuously mark Thoughts that resolve an engagement."
+    },
+    "Intellect Mark": {
+        "name": "Intellect Mark",
+        "cost": 3,
+        "effect": "Temporality mark Thinkers that play Intellects."
+    },
+    "Discard Mark": {
+        "name": "Discard Mark",
+        "cost": 2,
+        "effect": "Continuously mark Thinkers that discard cards from their hands."
+    },
+    "Mark": {
+        "name": "Mark",
+        "cost": 4,
+        "effect": "Immediately mark one card in play."
+    },
+    "Mark Thought": {
+        "name": "Mark Thought",
+        "cost": 3,
+        "effect": "Immediately mark one Thought or Group in play."
+    },
+    "Mark Thinker": {
+        "name": "Mark Thinker",
+        "cost": 3,
+        "effect": "Immediately mark one Thinker."
+    },
+    "Remove Marked": {
+        "name": "Remove Marked",
+        "cost": 2,
+        "effect": "Immediately remove a marked Thought or Intellect in play."
+    },
+    "Negate Marked": {
+        "name": "Negate Marked",
+        "cost": 2,
+        "effect": "Temporality negate the effect of all marked cards."
+    },
+    "Power-down Marked": {
+        "name": "Power-down Marked",
+        "cost": 2,
+        "effect": "Temporality halve the power of all marked Thoughts."
+    },
+    "Group Marked": {
+        "name": "Group Marked",
+        "cost": 3,
+        "effect": "Immediately group target Thinker's Thoughts that are marked and engage them."
     }
 }

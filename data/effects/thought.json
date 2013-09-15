@@ -108,5 +108,35 @@
         "name": "Removed Discard",
         "powerModifier": -2,
         "effect": "When this card is removed from play, all Thinkers must discard 1 card from their hand."
+    },
+    "Marked Protection": {
+        "name": "Marked Protection",
+        "powerModifier": -2,
+        "effect": "While engaging a marked card, this Thought or Group cannot be removed."
+    },
+    "Marked Power-up": {
+        "name": "Marked Power-up",
+        "powerModifier": -2,
+        "effect": "While engaging a marked card, triple this Thought's Power."
+    },
+    "Marked Purger": {
+        "name": "Marked Purger",
+        "powerModifier": -4,
+        "effect": "While engaging a marked Thought or Group, immediately remove it from play."
+    },
+    "Marked Wrath": {
+        "name": "Marked Wrath",
+        "powerModifier": -4,
+        "effect": "When resolving an engagement with a marked card, disengage this Thought or Group."
+    },
+    "Marked Destroyer": {
+        "name": "Marked Destroyer",
+        "powerModifier": -4,
+        "effect": "While engaging a marked card, this Thought or Group cannot be blocked."
+    },
+    "Marked Break": {
+        "name": "Marked Break",
+        "powerModifier": -4,
+        "effect": "When resolving an engagement with a marked Thinker, reduce target marked Thinker's Break to 0."
     }
 }

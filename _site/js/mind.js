@@ -30,7 +30,8 @@ var MIND = (function($){
                 overwhelmDeck: "/data/decks/overwhelmDeck.json",
                 counterDeck: "/data/decks/counterDeck.json",
                 sacrificeDeck: "/data/decks/sacrificeDeck.json",
-                amnesiaDeck: "/data/decks/amnesiaDeck.json"
+                amnesiaDeck: "/data/decks/amnesiaDeck.json",
+                judgeDeck: "/data/decks/judgeDeck.json"
             };
 
         loadData(files, function(data){
