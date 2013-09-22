@@ -59,8 +59,8 @@
         "powerModifier": -6,
         "effect": "When this card is removed from play, discard the top card of a target deck."
     },
-    "Thoughtless Recollect": {
-        "name": "Thoughtless Recollect",
+    "Thoughtless Recollection": {
+        "name": "Thoughtless Recollection",
         "powerModifier": -8,
         "effect": "When you have no other Thoughts in play, this card may be played from the Discard pile on your turn."
     },
@@ -69,8 +69,8 @@
         "powerModifier": 36,
         "effect": "When this card is played from your hand, immediately remove it from play."
     },
-    "Foreboding Sacrafice": {
-        "name": "Foreboding Sacrafice",
+    "Foreboding Sacrifice": {
+        "name": "Foreboding Sacrifice",
         "powerModifier": -8,
         "effect": "When this Thought or Group would be removed, you may instead discard the top five cards of your deck."
     },
@@ -78,11 +78,6 @@
         "name": "Foreboding Engagement",
         "powerModifier": 25,
         "effect": "When this card resolves an engagement, discard the top three cards of your deck."
-    },
-    "Thoughtless Recollect": {
-        "name": "Thoughtless Recollect",
-        "powerModifier": -8,
-        "effect": "When you have no other Thoughts in play, this card may be played from the Discard pile on your turn."
     },
     "Discard Power-up": {
         "name": "Discard Power-up",
@@ -94,8 +89,8 @@
         "powerModifier": -6,
         "effect": "When this card is removed from play, discard the top 3 cards of target Thinker's deck."
     },
-    "Sacrafice Amnesia": {
-        "name": "Sacrafice Amnesia",
+    "Sacrifice Amnesia": {
+        "name": "Sacrifice Amnesia",
         "powerModifier": -6,
         "effect": "When is card is played, you may remove one of your own Thoughts in play and discard the top 3 cards of target Thinker's deck."
     },
@@ -138,5 +133,10 @@
         "name": "Marked Break",
         "powerModifier": -4,
         "effect": "When resolving an engagement with a marked Thinker, reduce target marked Thinker's Break to 0."
+    },
+    "Eternal Thought": {
+        "name": "Eternal Thought",
+        "powerModifier": -32,
+        "effect": "This card cannot be removed."
     }
 }

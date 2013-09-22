@@ -31,7 +31,8 @@ var MIND = (function($){
                 counterDeck: "/data/decks/counterDeck.json",
                 sacrificeDeck: "/data/decks/sacrificeDeck.json",
                 amnesiaDeck: "/data/decks/amnesiaDeck.json",
-                judgeDeck: "/data/decks/judgeDeck.json"
+                judgeDeck: "/data/decks/judgeDeck.json",
+                motherDeck: "/data/decks/motherDeck.json"
             };
 
         loadData(files, function(data){

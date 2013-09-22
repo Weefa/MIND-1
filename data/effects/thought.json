@@ -133,5 +133,10 @@
         "name": "Marked Break",
         "powerModifier": -4,
         "effect": "When resolving an engagement with a marked Thinker, reduce target marked Thinker's Break to 0."
+    },
+    "Eternal Thought": {
+        "name": "Eternal Thought",
+        "powerModifier": -32,
+        "effect": "This card cannot be removed."
     }
 }

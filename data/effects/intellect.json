@@ -37,7 +37,7 @@
     "Misdirection": {
         "name": "Misdirection",
         "cost": 2,
-        "effect": "Immediate: Change the target of an engagement."
+        "effect": "Immediate: Change the target of an engagement to a card you control."
     },
     "Negate Effect": {
         "name": "Negate Effect",
@@ -188,5 +188,70 @@
         "name": "Group Marked",
         "cost": 3,
         "effect": "Immediate: Group target Thinker's Thoughts that are marked and engage them."
+    },
+    "Halve Break": {
+        "name": "Halve Break",
+        "cost": 3,
+        "effect": "Temporary: Lower target Thinker's Break point by half."
+    },
+    "Foreboding Intellect Negate": {
+        "name": "Foreboding Intellect Negate",
+        "cost": 1,
+        "effect": "Immediate: Discard the top 3 cards of your deck to negate and remove an intellect played."
+    },
+    "Continuous Misdirection": {
+        "name": "Continuous Misdirection",
+        "cost": 7,
+        "effect": "Continuous: Change the target of an engagement to a card you control."
+    },
+    "Force Thought Group": {
+        "name": "Force Thought Group",
+        "cost": 3,
+        "effect": "Temporary: Group all of target Thinker's disengaged Thoughts in play. You may only declare a single engagement this turn."
+    },
+    "Continuous Power XL": {
+        "name": "Continuous Power XL",
+        "cost": 3,
+        "effect": "Continuous: Increase the power of the target Thought by 40."
+    },
+    "Continuous Power XX": {
+        "name": "Continuous Power XX",
+        "cost": 2,
+        "effect": "Continuous: Increase the power of the target Thought by 20."
+    },
+    "Continuous Discard": {
+        "name": "Continuous Discard",
+        "cost": 2,
+        "effect": "Continuous: Discard the top card of target Thinker's deck when the target Thought resolves an engagement."
+    },
+    "Continuous Direct Power-up": {
+        "name": "Continuous Direct Power-up",
+        "cost": 2,
+        "effect": "Continuous: Double the power of the target Thought when it challenges a thinker directly."
+    },
+    "Continuous Disengage": {
+        "name": "Continuous Disengage",
+        "cost": 2,
+        "effect": "Continuous: Disengage the target Thought or Group when a turn ends."
+    },
+    "Foreboding Power": {
+        "name": "Foreboding Power",
+        "cost": 3,
+        "effect": "Temporary: Discard any number of cards from the top of your deck to increase the power of a target Thought by 10 for each discarded card."
+    },
+    "Thought Aggro": {
+        "name": "Thought Aggro",
+        "cost": 2,
+        "effect": "Temporary: Choose one of your own Thoughts in play, all engagements must target that Thought."
+    },
+    "Tireless Purge": {
+        "name": "Tireless Purge",
+        "cost": 4,
+        "effect": "Temporary: Disengage the target card if it resolves an engagement and removes a card."
+    },
+    "Low-cost Block": {
+        "name": "Low-cost Block",
+        "cost": 3,
+        "effect": "Temporary: Thoughts with a cost of 2 or less may not declare and engagement."
     }
 }
