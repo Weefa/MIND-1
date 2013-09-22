@@ -252,6 +252,6 @@
     "Low-cost Block": {
         "name": "Low-cost Block",
         "cost": 3,
-        "effect": "Temporary: Thoughts with a cost of 2 or less may not declare and engagement."
+        "effect": "Temporary: Thoughts with a cost of 2 or less may not declare an engagement."
     }
 }
