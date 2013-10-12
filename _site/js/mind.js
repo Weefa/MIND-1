@@ -5,44 +5,6 @@
 var MIND = (function($){
     "use strict";
 
-    // accepts a list of JSON key/value files and returns a data obj with contents
-    function loadData(data, callback) {
-        var count = 1,
-            totalKeys = Object.keys(data).length;
-
-        $.each(data, function(i){
-            $.getJSON(data[i], function(json){
-                data[i] = json; //TODO: add error handling
-                if(count === totalKeys && callback) {
-                    return callback(data);
-                }
-                count ++;
-            });
-        });
-    }
-
-    // load our local json files
-    function preload(callback) {
-        var files = {
-                intellect: "/data/effects/intellect.json",
-                thinker: "/data/effects/thinker.json",
-                thought: "/data/effects/thought.json",
-                overwhelmDeck: "/data/decks/overwhelmDeck.json",
-                counterDeck: "/data/decks/counterDeck.json",
-                sacrificeDeck: "/data/decks/sacrificeDeck.json",
-                amnesiaDeck: "/data/decks/amnesiaDeck.json",
-                judgeDeck: "/data/decks/judgeDeck.json",
-                motherDeck: "/data/decks/motherDeck.json"
-            };
-
-        loadData(files, function(data){
-            MIND.data = data;
-            if(callback) {
-                return callback();
-            }
-        });
-    }
-
     function getCardsByType(type, card){
         var result = [];
         $.each(card, function(i){
@@ -64,7 +26,7 @@ var MIND = (function($){
     function calcPower(cost, effect) {
         var power = (cost * 4);
         if(effect){
-            power += MIND.data.thought[effect].powerModifier;
+            power += MIND.effect.thought[effect].powerModifier;
         }
         return power;
     }
@@ -73,17 +35,16 @@ var MIND = (function($){
         return 50 - (memory*3);
     }
 
-    function cardHtml(card) {
+    function cardData(card) {
         var cardDefaults = {
-            type: "thought",
-            name: "No Name",
-            effect: null,
-            cost: 1
-        };
+                type: null,
+                name: "Undefined Name"
+            };
+        
         card = $.extend( {}, cardDefaults, card );
 
-        if(card.effect && typeof MIND.data[card.type][card.effect] !== "undefined") {
-            card.effectDescription = MIND.data[card.type][card.effect].effect;
+        if(card.effect && typeof MIND.effect[card.type][card.effect] !== "undefined") {
+            card.effectDescription = MIND.effect[card.type][card.effect].effect;
         } else {
             card.effect = false;
         }
@@ -92,8 +53,8 @@ var MIND = (function($){
             card.power = calcPower(card.cost, card.effect);
         }
 
-        if(card.type === 'intellect' && typeof MIND.data.intellect[card.effect] !== "undefined") {
-            card.cost = MIND.data.intellect[card.effect].cost;
+        if(card.type === 'intellect' && typeof MIND.effect.intellect[card.effect] !== "undefined") {
+            card.cost = MIND.effect.intellect[card.effect].cost;
             if (card.name === 'No Name') card.name = card.effect;
         }
 
@@ -102,7 +63,12 @@ var MIND = (function($){
             card.breakPoint = calcBreak(card.memory);
         }
 
-        var html = [
+        return card;
+    }
+
+    function cardHtml(card) {
+        var data = cardData(card),
+            html = [
                 '<div class="wl-card--<%= type %> wl-card">',
                     '<div class="top">',
                         '<div class="stats">',
@@ -145,8 +111,7 @@ var MIND = (function($){
                     '<% } %>',
                 '</div>'
             ].join('');
-
-        return _.template(html, card);
+        return _.template(html, data);
     }
 
     function deckHtml(deck){
@@ -157,20 +122,14 @@ var MIND = (function($){
         return html;
     }
 
-    preload(function(){
-        Linc.setDefaults({
-            context: $(document)
-        });
-        Linc.run();
-    });
-
-
     return {
+        effect: {},
+        deck: {},
         calcPower: calcPower,
         calcBreak: calcBreak,
+        cardData: cardData,
         cardHtml: cardHtml,
         deckHtml: deckHtml,
         getCardsByType: getCardsByType
     };
-
 })(jQuery);

@@ -1,4 +1,4 @@
-{
+MIND.effect.intellect = {
     "Break Point Hand Limit": {
         "name": "Break Point Hand Limit",
         "cost": 3,
@@ -254,4 +254,4 @@
         "cost": 3,
         "effect": "Temporary: Thoughts with a cost of 2 or less may not declare an engagement."
     }
-}
+};

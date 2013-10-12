@@ -21,12 +21,12 @@ Linc.add('cardCreator', function () {
 
         function getEffects() {
             var items = [];
-            $.each(MIND.data[cardType], function(i) {
-                var powerModifier = MIND.data[cardType][i].powerModifier,
-                    cost = MIND.data[cardType][i].cost,
+            $.each(MIND.effect[cardType], function(i) {
+                var powerModifier = MIND.effect[cardType][i].powerModifier,
+                    cost = MIND.effect[cardType][i].cost,
                     value = i,
-                    name = MIND.data[cardType][i].name,
-                    effect = MIND.data[cardType][i].effect;
+                    name = MIND.effect[cardType][i].name,
+                    effect = MIND.effect[cardType][i].effect;
                 items.push('<li class="effect-item"><label class="effect"><input class="radio" type="radio" name="card-effect" data-cost="' + cost + '" data-power-cost="' + powerModifier + '" value="' + value + '" /><span class="select"><span class="name">' + name + '</span> - <span class="effect-description">' + effect + '</span></span></span></label></li>');
             });
             $effectList.append(items.join(''));

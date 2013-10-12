@@ -1,4 +1,4 @@
-{
+MIND.deck.mother = {
     "type": "deck",
     "name": "Mother Deck",
     "card": [
@@ -91,4 +91,4 @@
             "effect": "Recall"
         }
     ]
-}
+};

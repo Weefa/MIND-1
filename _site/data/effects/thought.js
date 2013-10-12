@@ -1,4 +1,4 @@
-{
+MIND.effect.thought = {
     "Active Aggression": {
         "name": "Active Aggression",
         "powerModifier": 10,
@@ -139,4 +139,4 @@
         "powerModifier": -32,
         "effect": "This card cannot be removed."
     }
-}
+};

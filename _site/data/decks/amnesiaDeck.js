@@ -1,4 +1,4 @@
-{
+MIND.deck.amnesia = {
     "type": "deck",
     "name": "Amnesia Deck",
     "card": [
@@ -108,4 +108,4 @@
             "effect": "Removal Amnesia"
         }
     ]
-}
+};

@@ -1,54 +1,42 @@
-{
+MIND.deck.overwhelm = {
     "type": "deck",
-    "name": "Sacrifice Deck",
+    "name": "Overwhelm Deck",
     "card": [
         {
             "type": "thinker",
-            "name": "Sacrifice Thinker",
-            "memory": 12,
-            "effect": "Sacrifice Recall"
+            "name": "Overwhelm Thinker",
+            "memory": 15,
+            "effect": "Overwhelm"
         },
         {
             "type": "thought",
-            "name": "Sacrifice I",
+            "name": "Overwhelm I",
             "cost": 2,
-            "effect": "Elusive Thought"
+            "effect": "Active Power-amp"
         },
         {
             "type": "thought",
-            "name": "Sacrifice II",
-            "cost": 3,
-            "effect": "End-turn Discard"
-        },
-        {
-            "type": "thought",
-            "name": "Sacrifice III",
-            "cost": 3,
-            "effect": "Post-challenge Discard"
-        },
-        {
-            "type": "thought",
-            "name": "Sacrifice IV",
+            "name": "Overwhelm II",
             "cost": 2,
             "effect": "Challenger Thought-Eater"
         },
         {
             "type": "thought",
-            "name": "Sacrifice V",
-            "cost": 4,
+            "name": "Overwhelm III",
+            "cost": 1,
+            "effect": "End-turn Discard"
+        },
+        {
+            "type": "thought",
+            "name": "Overwhelm IV",
+            "cost": 1,
+            "effect": "Post-challenge Discard"
+        },
+        {
+            "type": "thought",
+            "name": "Overwhelm V",
+            "cost": 3,
             "effect": "Removed Recollection"
-        },
-        {
-            "type": "thought",
-            "name": "Sacrifice VI",
-            "cost": 2,
-            "effect": "Foreboding Sacrafice"
-        },
-        {
-            "type": "thought",
-            "name": "Sacrifice VII",
-            "cost": 2,
-            "effect": "Foreboding Engagement"
         },
         {
             "type": "thought",
@@ -66,8 +54,8 @@
             "cost": 2
         },
         {
-            "type": "thought",
-            "name": "Minion IV",
+            "type": "Minion IV",
+            "name": "Blue Thought 8",
             "cost": 2
         },
         {
@@ -76,16 +64,32 @@
             "cost": 2
         },
         {
-            "type": "intellect",
-            "effect": "Focus Recovery"
+            "type": "thought",
+            "name": "Minion VI",
+            "cost": 2
+        },
+        {
+            "type": "thought",
+            "name": "Minion VII",
+            "cost": 2
+        },
+        {
+            "type": "thought",
+            "name": "Minion VIII",
+            "cost": 2
+        },
+        {
+            "type": "thought",
+            "name": "Minion IX",
+            "cost": 2
         },
         {
             "type": "intellect",
-            "effect": "Memory Loss"
+            "effect": "Recall"
         },
         {
             "type": "intellect",
-            "effect": "Thought Cannon"
+            "effect": "Negate Effect"
         },
         {
             "type": "intellect",
@@ -93,19 +97,19 @@
         },
         {
             "type": "intellect",
-            "effect": "Recollection"
-        },
-        {
-            "type": "intellect",
-            "effect": "Thought Tribute"
-        },
-        {
-            "type": "intellect",
-            "effect": "Thought Recollection"
+            "effect": "Power-amp IV"
         },
         {
             "type": "intellect",
             "effect": "Power-amp X"
+        },
+        {
+            "type": "intellect",
+            "effect": "Recollection"
+        },
+        {
+            "type": "intellect",
+            "effect": "Thought Recollection"
         }
     ]
-}
+};

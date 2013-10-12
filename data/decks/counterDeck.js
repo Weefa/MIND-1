@@ -1,4 +1,4 @@
-{
+MIND.deck.counter = {
     "type": "deck",
     "name": "Counter Deck",
     "card": [
@@ -106,4 +106,4 @@
             "effect": "Thought Recollection"
         }
     ]
-}
+};

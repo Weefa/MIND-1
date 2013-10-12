@@ -1,4 +1,4 @@
-{
+MIND.deck.judge = {
     "type": "deck",
     "name": "Judge Deck",
     "card": [
@@ -109,4 +109,4 @@
             "effect": "Group Marked"
         }
     ]
-}
+};
