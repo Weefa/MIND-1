@@ -42,7 +42,7 @@ MIND.deck.sacrifice = {
             "type": "thought",
             "name": "Sacrifice VI",
             "cost": 2,
-            "effect": "Foreboding Sacrafice"
+            "effect": "Foreboding Sacrifice"
         },
         {
             "type": "thought",

@@ -5,7 +5,7 @@ Linc.add('deckList', function () {
 
 		if(typeof MIND.deck[options.deck] !== 'undefined'){
 			var deck = MIND.deck[options.deck].card,
-				cards = MIND.getCardsByType(options.type, deck);
+				cards = MIND.filterDeckByType(options.type, deck);
 			$this.append(MIND.deckHtml(cards));
 		} else { console.log('undefined', options); }
 	});

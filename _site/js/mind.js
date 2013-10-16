@@ -2,46 +2,34 @@
 /*jslint undef: true */
 
 
-var MIND = (function($){
+var MIND = (function(){
     "use strict";
 
-    function getCardsByType(type, card){
+    function filterDeckByType(type, deck) {
         var result = [];
-        $.each(card, function(i){
+        for (var i = 0; i < deck.length; i++) {
             if (Array.isArray(type)) {
-                $.each(type, function(x){
-                    if(card[i].type === type[x]){
-                        result.push(card[i]);
-                    }
-                });
-            } else {
-                if(card[i].type === type){
-                    result.push(card[i]);
+                for (var x = 0; x < type.length; x++) {
+                    if(deck[i].type === type[x]) result.push(deck[i]);
                 }
+            } else if (deck[i].type === type) {
+                result.push(deck[i]);
             }
-        });
+        }
         return result;
     }
 
     function calcPower(cost, effect) {
         var power = (cost * 4);
-        if(effect){
-            power += MIND.effect.thought[effect].powerModifier;
-        }
+        if(effect) power += MIND.effect.thought[effect].powerModifier;
         return power;
     }
 
     function calcBreak(memory) {
-        return 50 - (memory*3);
+        return 50 - (memory * 3);
     }
 
     function cardData(card) {
-        var cardDefaults = {
-                type: null,
-                name: "Undefined Name"
-            };
-        
-        card = $.extend( {}, cardDefaults, card );
 
         if(card.effect && typeof MIND.effect[card.type][card.effect] !== "undefined") {
             card.effectDescription = MIND.effect[card.type][card.effect].effect;
@@ -55,7 +43,7 @@ var MIND = (function($){
 
         if(card.type === 'intellect' && typeof MIND.effect.intellect[card.effect] !== "undefined") {
             card.cost = MIND.effect.intellect[card.effect].cost;
-            if (card.name === 'No Name') card.name = card.effect;
+            if (typeof card.name === 'undefined') card.name = card.effect;
         }
 
         if(card.type === 'thinker') {
@@ -114,11 +102,9 @@ var MIND = (function($){
         return _.template(html, data);
     }
 
-    function deckHtml(deck){
+    function deckHtml(deck) {
         var html = [];
-        $.each(deck, function(i){
-            html.push(cardHtml(deck[i]));
-        });
+        for (var i = 0; i < deck.length; i++) html.push(cardHtml(deck[i]));
         return html;
     }
 
@@ -130,6 +116,7 @@ var MIND = (function($){
         cardData: cardData,
         cardHtml: cardHtml,
         deckHtml: deckHtml,
-        getCardsByType: getCardsByType
+        filterDeckByType: filterDeckByType
     };
-})(jQuery);
+
+})();
