@@ -6,7 +6,7 @@
 	bottom: -190px;
 	left: 0;
 	width: 100%;
-	border-top: 5px solid #000;
+	border-top: 0.05in solid #000;
 	padding: 1em;
 	transition: bottom 0.3s ease-in-out;
 	&:hover,
@@ -15,7 +15,22 @@
 	}
 	.right {
 		float: right;
-		display: none;
+	}
+
+	.pile {
+		border: 0.05in solid #000;
+		padding: 1em;
+		font-weight: bold;
+		text-align: center;
+
+		.label {
+			display: block;
+			text-transform: uppercase;
+		}
+		.num {
+			font-size: 2em;
+
+		}
 	}
 }
 
@@ -31,7 +46,8 @@
 		float: left;
 		overflow: hidden;
 		width: 85px;
-		transition: all 0.15s;
+		transition-property: width;
+  		transition-duration: 0.15s;
 		&:last-child {
 			width: 206px;
 		}
