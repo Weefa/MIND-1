@@ -23,6 +23,7 @@ $aside-width: 200px;
 .wl-layout {
     position: relative;
     transition: padding 0.25s;
+    overflow-x: hidden;
     
     .main {
         min-width: 935px;
