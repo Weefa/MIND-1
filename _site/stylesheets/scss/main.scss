@@ -31,7 +31,8 @@ $aside-width: 200px;
     line-height: 1.5;
     
     .main {
-        min-width: 935px;
+        position: relative;
+        transition: left 0.25s;
     }
 
     .aside {
@@ -78,13 +79,25 @@ $aside-width: 200px;
             }
         }
     }
+
+    .footer {
+        margin: 2em 0;
+        padding: 2em;
+        border-top: 1px dashed #000;
+        .email {
+            display: block;
+            width: 100%;
+        }
+    }
 }
 
 .wl-toggle-aside {
     display: none;
     &:checked ~ .wl-layout {
-        padding-right: $aside-width + 2px;
         .aside { right: 0; }
+        .main {
+            left: -$aside-width - 2px;
+        }
     }
 }
 
@@ -144,7 +157,9 @@ $aside-width: 200px;
 }
 
 .wl-header {
+    box-sizing: border-box;
     padding: 1em;
+    height: 68px;
     border-bottom: 1px solid #000;
     background: #fff;
     overflow: hidden;

@@ -14,7 +14,8 @@ a {
   overflow-x: hidden;
   line-height: 1.5; }
   .wl-layout .main {
-    min-width: 935px; }
+    position: relative;
+    transition: left 0.25s; }
   .wl-layout .aside {
     position: absolute;
     right: -202px;
@@ -48,13 +49,20 @@ a {
           text-decoration: none; }
           .wl-layout .aside .links .link a:hover {
             color: red; }
+  .wl-layout .footer {
+    margin: 2em 0;
+    padding: 2em;
+    border-top: 1px dashed #000; }
+    .wl-layout .footer .email {
+      display: block;
+      width: 100%; }
 
 .wl-toggle-aside {
   display: none; }
-  .wl-toggle-aside:checked ~ .wl-layout {
-    padding-right: 202px; }
-    .wl-toggle-aside:checked ~ .wl-layout .aside {
-      right: 0; }
+  .wl-toggle-aside:checked ~ .wl-layout .aside {
+    right: 0; }
+  .wl-toggle-aside:checked ~ .wl-layout .main {
+    left: -202px; }
 
 .wl-aside-toggler:before {
   content: '\2630'; }
@@ -87,7 +95,9 @@ a {
     text-decoration: none; }
 
 .wl-header {
+  box-sizing: border-box;
   padding: 1em;
+  height: 68px;
   border-bottom: 1px solid #000;
   background: #fff;
   overflow: hidden;
