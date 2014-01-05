@@ -1,6 +1,9 @@
 body {
   font-family: 'Droid Sans', sans-serif; }
 
+a {
+  text-decoration: none; }
+
 @media print {
   body {
     margin: 0;
