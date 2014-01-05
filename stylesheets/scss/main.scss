@@ -24,6 +24,7 @@ $aside-width: 200px;
     position: relative;
     transition: padding 0.25s;
     overflow-x: hidden;
+    line-height: 1.5;
     
     .main {
         min-width: 935px;
@@ -133,6 +134,9 @@ $aside-width: 200px;
 
 .wl-site-name {
     vertical-align: middle;
+    a {
+        text-decoration: none;
+    }
 }
 
 .wl-header {
@@ -544,4 +548,23 @@ $aside-width: 200px;
 }
 
 
+//================================================================
+// :: Content
+//================================================================
+
+.wl-content-block {
+    padding: 1em 1em 3em;
+    max-width: 760px;
+
+    h2 {
+        margin-top: 2em;
+        text-transform: uppercase;
+    }
+
+    .intro {
+        font-size: 1.8em;
+        color: #666;
+    }
+
+}
 

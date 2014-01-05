@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="/stylesheets/css/main.css">
     </head>
     <body>
-        <input type="checkbox" class="wl-toggle-aside" id="toggle-aside" />
+        <input type="checkbox" class="wl-toggle-aside" id="toggle-aside" checked />
         <div class="wl-layout">
             <div class="aside">
                 {% include nav.html %}
@@ -26,7 +26,7 @@
                     </label>
                     <button class="wl-header--button wl-header" onClick="window.print();">Print</button>
                     <div class="wl-header">
-                        <h1 class="wl-site-name"><abbr title="Master in Neural Defense">MIND</abbr> - {{ page.title }}</h1>
+                        <h1 class="wl-site-name"><a href="/index.html"><abbr title="Mastery in Neural Defense">MIND</abbr></a> - {{ page.title }}</h1>
                     </div>
                 </header>
                 <div class="main-content" >

@@ -8,7 +8,8 @@ body {
 .wl-layout {
   position: relative;
   transition: padding 0.25s;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  line-height: 1.5; }
   .wl-layout .main {
     min-width: 935px; }
   .wl-layout .aside {
@@ -79,6 +80,8 @@ body {
 
 .wl-site-name {
   vertical-align: middle; }
+  .wl-site-name a {
+    text-decoration: none; }
 
 .wl-header {
   padding: 1em;
@@ -381,3 +384,12 @@ body {
 
   .wl-card--thinker {
     margin-top: 0; } }
+.wl-content-block {
+  padding: 1em 1em 3em;
+  max-width: 760px; }
+  .wl-content-block h2 {
+    margin-top: 2em;
+    text-transform: uppercase; }
+  .wl-content-block .intro {
+    font-size: 1.8em;
+    color: #666; }
