@@ -78,7 +78,10 @@ a {
     .wl-layout .aside {
       display: none; }
     .wl-layout .main {
-      min-width: 0; } }
+      min-width: 0;
+      left: 0 !important; }
+    .wl-layout .footer {
+      display: none; } }
 .wl-input .label {
   display: block;
   font-size: 8pt;
@@ -89,13 +92,16 @@ a {
   line-height: 1.5;
   vertical-align: bottom;
   margin-bottom: 1px;
-  border-radius: none; }
+  border-radius: 0px; }
   .wl-input .value:focus {
     outline: none;
     border-bottom-width: 2px;
     margin-bottom: 0; }
 .wl-input .req {
   color: red; }
+  @media print {
+    .wl-input .req {
+      display: none; } }
 
 .wl-hide {
   display: none; }
@@ -105,7 +111,10 @@ a {
   .wl-content-form .textarea {
     display: block;
     width: 100%;
-    padding: 0.25em;
+    height: 150px;
+    padding: 0.5em;
+    margin-bottom: 2em;
+    font-size: 0.8em;
     border: 1px solid #000; }
     .wl-content-form .textarea:focus {
       outline: 1px solid #000; }
@@ -115,6 +124,12 @@ a {
   .wl-content-form .buttons {
     margin: 2em 0;
     border-bottom: 1px dotted #000; }
+    @media print {
+      .wl-content-form .buttons {
+        visibility: hidden; } }
+  @media print {
+    .wl-content-form .submit {
+      display: none; } }
 
 .wl-header {
   box-sizing: border-box;
@@ -297,7 +312,7 @@ a {
   border: none;
   border: 1px dotted #000;
   border-bottom: 2px solid #000;
-  border-radius: none;
+  border-radius: 0px;
   background: #fff;
   font-weight: bold;
   text-align: center;
@@ -469,3 +484,8 @@ a {
   .wl-content-block .intro {
     font-size: 1.8em;
     color: #666; }
+
+.wl-hash {
+  position: relative;
+  top: -2px;
+  font-size: 0.8em; }
