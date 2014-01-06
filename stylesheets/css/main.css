@@ -88,7 +88,8 @@ a {
   border-bottom: 1px solid #000;
   line-height: 1.5;
   vertical-align: bottom;
-  margin-bottom: 1px; }
+  margin-bottom: 1px;
+  border-radius: none; }
   .wl-input .value:focus {
     outline: none;
     border-bottom-width: 2px;
@@ -223,7 +224,7 @@ a {
   display: none; }
 .wl-create-card.is-expanded .panel--right {
   border-bottom: 1px dashed #000;
-  height: 360px; }
+  height: 380px; }
   @media screen and (min-width: 768px) {
     .wl-create-card.is-expanded .panel--right {
       height: auto;
@@ -275,6 +276,7 @@ a {
   border: none;
   border: 1px dotted #000;
   border-bottom: 2px solid #000;
+  border-radius: none;
   background: #fff;
   font-weight: bold;
   text-align: center;
