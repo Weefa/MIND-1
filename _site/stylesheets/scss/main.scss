@@ -175,17 +175,43 @@ a {
         vertical-align: bottom;
         margin-bottom: 1px;
         border-radius: none;
-
-
         &:focus {
             outline: none;
             border-bottom-width: 2px;
             margin-bottom: 0;
         }
     }
+    .req {
+        color: red;
+    }
 }
 
+.wl-hide {
+    display: none;
+}
 
+.wl-content-form {
+    margin: 2em 0;
+
+    .textarea {
+        display: block;
+        width: 100%;
+        padding: 0.25em;
+        border: 1px solid #000;
+        &:focus {
+            outline: 1px solid #000;
+        }
+    }
+
+    .inline {
+        display: inline-block;
+        margin-right: 1em;
+    }
+    .buttons {
+        margin: 2em 0;
+        border-bottom: 1px dotted #000;
+    }
+}
 
 
 //================================================================

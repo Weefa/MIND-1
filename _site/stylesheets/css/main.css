@@ -94,6 +94,27 @@ a {
     outline: none;
     border-bottom-width: 2px;
     margin-bottom: 0; }
+.wl-input .req {
+  color: red; }
+
+.wl-hide {
+  display: none; }
+
+.wl-content-form {
+  margin: 2em 0; }
+  .wl-content-form .textarea {
+    display: block;
+    width: 100%;
+    padding: 0.25em;
+    border: 1px solid #000; }
+    .wl-content-form .textarea:focus {
+      outline: 1px solid #000; }
+  .wl-content-form .inline {
+    display: inline-block;
+    margin-right: 1em; }
+  .wl-content-form .buttons {
+    margin: 2em 0;
+    border-bottom: 1px dotted #000; }
 
 .wl-header {
   box-sizing: border-box;
