@@ -63,6 +63,11 @@ a {
     right: 0; }
   .wl-toggle-aside:checked ~ .wl-layout .main {
     left: -202px; }
+  @media screen and (min-width: 960px) {
+    .wl-toggle-aside:checked ~ .wl-layout {
+      padding-right: 202px; }
+      .wl-toggle-aside:checked ~ .wl-layout .main {
+        left: 0; } }
 
 .wl-aside-toggler:before {
   content: '\2630'; }
@@ -89,11 +94,6 @@ a {
     border-bottom-width: 2px;
     margin-bottom: 0; }
 
-.wl-site-name {
-  vertical-align: middle; }
-  .wl-site-name a {
-    text-decoration: none; }
-
 .wl-header {
   box-sizing: border-box;
   padding: 1em;
@@ -106,6 +106,7 @@ a {
 .wl-header--button {
   float: right;
   display: block;
+  background: #fff;
   border-right: none;
   border-top: none;
   border-left: 1px dotted #000;
@@ -119,11 +120,16 @@ a {
 
 .wl-site-name {
   margin: 0;
-  font-size: 2em;
+  font-size: 1em;
   text-transform: uppercase;
   line-height: 37px;
   font-weight: bold;
-  line-height: 1; }
+  vertical-align: middle; }
+  @media screen and (min-width: 768px) {
+    .wl-site-name {
+      font-size: 2em; } }
+  .wl-site-name a {
+    text-decoration: none; }
 
 @media print {
   .wl-header {
@@ -140,14 +146,21 @@ a {
     padding: 0;
     white-space: normal; } }
 .wl-card-shelf {
-  min-height: 403px;
   border-bottom: 1px solid #000;
   overflow: hidden;
   page-break-after: always; }
+  @media screen and (min-width: 768px) {
+    .wl-card-shelf {
+      height: 352px; } }
   .wl-card-shelf .bd {
-    margin: 0.5in; }
+    margin: 0.25in; }
+  .wl-card-shelf .wl-create-card {
+    overflow: hidden; }
+    @media screen and (min-width: 768px) {
+      .wl-card-shelf .wl-create-card {
+        float: left; } }
   .wl-card-shelf .wl-horizontal-scroller {
-    padding: 0.5in; }
+    padding: 0.25in; }
 
 @media print {
   .wl-card-shelf {
@@ -173,26 +186,50 @@ a {
   transition: background-color 0.1s; }
 .wl-create-card .wl-card .stats .invalid {
   background-color: red; }
-.wl-create-card .panel {
-  float: left; }
+@media screen and (min-width: 768px) {
+  .wl-create-card .panel {
+    float: left; } }
 .wl-create-card .panel--left {
+  margin-left: auto;
+  margin-right: auto;
   width: 304px;
   text-align: center; }
+  @media screen and (min-width: 768px) {
+    .wl-create-card .panel--left {
+      margin-left: 0.25in;
+      margin-right: 0.25in; } }
   .wl-create-card .panel--left .wl-card--new {
     text-align: left; }
 .wl-create-card .panel--right {
-  width: 0;
   overflow: hidden;
-  transition: width 0.25s;
-  border-right: 1px dashed #000; }
+  border-top: 1px dashed #000;
+  height: 0;
+  transition: height 0.25s; }
+  @media screen and (min-width: 768px) {
+    .wl-create-card .panel--right {
+      width: 0;
+      height: auto;
+      transition: width 0.25s;
+      border-top: none;
+      border-right: 1px dashed #000;
+      height: 352px; } }
   .wl-create-card .panel--right .wl-create-form {
     opacity: 0;
     transition: opacity 1s; }
+    @media screen and (min-width: 768px) {
+      .wl-create-card .panel--right .wl-create-form {
+        width: 350px; } }
 .wl-create-card .wl-card--new {
   display: none; }
 .wl-create-card.is-expanded .panel--right {
-  width: 4.5in;
-  border-left: 1px dashed #000; }
+  border-bottom: 1px dashed #000;
+  height: 360px; }
+  @media screen and (min-width: 768px) {
+    .wl-create-card.is-expanded .panel--right {
+      height: auto;
+      width: 350px;
+      border-bottom: none;
+      border-left: 1px dashed #000; } }
 .wl-create-card.is-expanded .new {
   display: none; }
 .wl-create-card.is-expanded .wl-card--new {
@@ -206,8 +243,6 @@ a {
 .wl-create-form {
   display: block;
   position: relative;
-  width: 4.5in;
-  height: 4.15in;
   float: left;
   overflow: auto; }
   .wl-create-form .title {
@@ -225,8 +260,6 @@ a {
   .wl-create-form .wl-input {
     display: inline-block;
     margin-right: 0.05in; }
-    .wl-create-form .wl-input input[type=text] {
-      width: 235px; }
   .wl-create-form .err {
     display: block;
     margin: 1em 0;
@@ -242,7 +275,7 @@ a {
   border: none;
   border: 1px dotted #000;
   border-bottom: 2px solid #000;
-  background: transparent;
+  background: #fff;
   font-weight: bold;
   text-align: center;
   transition: outline 0.1s;
@@ -399,10 +432,17 @@ a {
     margin-top: 0; } }
 .wl-content-block {
   padding: 1em 1em 3em;
-  max-width: 760px; }
+  max-width: 768px;
+  box-sizing: border-box; }
   .wl-content-block h2 {
     margin-top: 2em;
     text-transform: uppercase; }
+  .wl-content-block .img-block {
+    display: block;
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .wl-content-block .img-block {
+        width: auto; } }
   .wl-content-block .intro {
     font-size: 1.8em;
     color: #666; }

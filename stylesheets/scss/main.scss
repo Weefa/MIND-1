@@ -1,3 +1,47 @@
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+$white-space:   0.05in;
+$card-height:   3.15in;
+$card-width:    2.15in;
+$aside-width:   200px;
+
+
+// ==========================================================================
+// @mixin respond-to
+// ==========================================================================
+$break-medium:  768px;
+$break-wide:    960px;
+ 
+$media-query-support: true !default;
+ 
+@mixin respond-to($media: medium, $mq-support: $media-query-support) {
+  @if $mq-support == true {
+    // output content wrapped in media queries
+    @if $media == medium {
+      @media screen and (min-width: #{$break-medium}) { @content; }
+    }
+    @else if $media == wide {
+      @media screen and (min-width: #{$break-wide}) { @content; }
+    }
+    @else if $media == print {
+      @media print { @content; }
+    }
+  }
+  @elseif $mq-support == false {
+    // just output the content
+    @if $media == medium or wide {
+      @content;
+    }
+  }
+}
+
+
+
+// ==========================================================================
+// Globals
+// ==========================================================================
 
 body {
     font-family: 'Droid Sans', sans-serif;
@@ -6,8 +50,7 @@ body {
 a {
     text-decoration: none;
 }
-
-@media print {
+@include respond-to(print) {
     body {
         margin: 0;
         padding: 0;
@@ -15,10 +58,6 @@ a {
 }
 
 
-$white-space: 0.05in;
-$card-height: 3.15in;
-$card-width: 2.15in;
-$aside-width: 200px;
 
 //================================================================
 // :: layout
@@ -95,11 +134,14 @@ $aside-width: 200px;
     display: none;
     &:checked ~ .wl-layout {
         .aside { right: 0; }
-        .main {
-            left: -$aside-width - 2px;
+        .main { left: -$aside-width - 2px; }
+        @include respond-to(wide) {
+            padding-right: $aside-width + 2px;
+            .main { left: 0; }
         }
     }
 }
+
 
 .wl-aside-toggler {
     &:before {
@@ -107,7 +149,7 @@ $aside-width: 200px;
     }
 }
 
-@media print {
+@include respond-to(print) {
     .wl-layout {
         padding-right: 0 !important;
         .aside { display: none; }
@@ -149,13 +191,6 @@ $aside-width: 200px;
 // :: header
 //================================================================
 
-.wl-site-name {
-    vertical-align: middle;
-    a {
-        text-decoration: none;
-    }
-}
-
 .wl-header {
     box-sizing: border-box;
     padding: 1em;
@@ -169,6 +204,7 @@ $aside-width: 200px;
 .wl-header--button {
     float: right;
     display: block;
+    background: #fff;
     border-right: none;
     border-top: none;
     border-left: 1px dotted #000;
@@ -182,14 +218,20 @@ $aside-width: 200px;
 
 .wl-site-name {
     margin: 0;
-    font-size: 2em;
+    font-size: 1em;
     text-transform: uppercase;
     line-height: 37px;
     font-weight: bold;
-    line-height: 1;
+    vertical-align: middle;
+    @include respond-to(medium) {
+        font-size: 2em;
+    }
+    a {
+        text-decoration: none;
+    }
 }
 
-@media print {
+@include respond-to(print) {
     .wl-header { display: none; }
 }
 
@@ -205,7 +247,7 @@ $aside-width: 200px;
     white-space: normal;
   }
 }
-@media print {
+@include respond-to(print) {
     .wl-horizontal-scroller {
         padding: 0;
         white-space: normal;
@@ -217,17 +259,25 @@ $aside-width: 200px;
 //================================================================
 
 .wl-card-shelf {
-    min-height: 403px;
     border-bottom: 1px solid #000;
     overflow: hidden;
     page-break-after: always;
-    .bd {
-        margin: $white-space*10;
+    @include respond-to(medium) {
+        height: 352px;
     }
-    .wl-horizontal-scroller  { padding: $white-space*10; }
+    .bd {
+        margin: $white-space * 5;
+    }
+    .wl-create-card {
+        overflow: hidden;
+        @include respond-to(medium) {
+            float: left;
+        }
+    }
+    .wl-horizontal-scroller  { padding: $white-space * 5; }
 }
 
-@media print {
+@include respond-to(print) {
     .wl-card-shelf {
         min-height: 0;
         margin: 0;
@@ -264,22 +314,42 @@ $aside-width: 200px;
     }
 
     .panel {
-        float: left;
+        @include respond-to(medium) {
+            float: left;
+        }
     }
     .panel--left {
+        margin-left: auto;
+        margin-right: auto;
         width: 304px;
         text-align: center;
+        @include respond-to(medium) {
+            margin-left: 0.25in;
+            margin-right: 0.25in;
+        }
         .wl-card--new { text-align: left; }
     }
     .panel--right {
-        width: 0;
         overflow: hidden;
-        transition: width 0.25s;
-        border-right: 1px dashed #000;
+        border-top: 1px dashed #000;
+        height: 0;
+        transition: height 0.25s;
+
+        @include respond-to(medium) {
+            width: 0;
+            height: auto;
+            transition: width 0.25s;
+            border-top: none;
+            border-right: 1px dashed #000;
+            height: 352px;
+        }
 
         .wl-create-form {
             opacity: 0;
             transition: opacity 1s;
+            @include respond-to(medium) {
+                width: 350px;
+            }
         }
     }
 
@@ -289,8 +359,14 @@ $aside-width: 200px;
 
     &.is-expanded {
         .panel--right {
-            width: 4.5in;
-            border-left: 1px dashed #000;
+            border-bottom: 1px dashed #000;
+            height: 360px;
+            @include respond-to(medium) {
+                height: auto;
+                width: 350px;
+                border-bottom: none;
+                border-left: 1px dashed #000;
+            }
         }
         .new {
             display: none;
@@ -298,12 +374,14 @@ $aside-width: 200px;
         .wl-card--new {
             display: inline-block;
         }
-        .wl-create-form { opacity: 1; }
+        .wl-create-form { 
+            opacity: 1;
+        }
     }
 
 }
 
-@media print {
+@include respond-to(print) {
     .wl-create-card { display: none !important; }
 }
 
@@ -314,8 +392,6 @@ $aside-width: 200px;
 .wl-create-form {
     display: block;
     position: relative;
-    width: 4.5in;
-    height: $card-height + $white-space*20;
     float: left;
     overflow: auto;
 
@@ -341,7 +417,6 @@ $aside-width: 200px;
     .wl-input {
         display: inline-block;
         margin-right: $white-space;
-        input[type=text] { width: 235px; }
     }
 
     .err {
@@ -367,7 +442,7 @@ $aside-width: 200px;
     border: none;
     border: 1px dotted #000;
     border-bottom: 2px solid #000;
-    background: transparent;
+    background: #fff;
     font-weight: bold;
     text-align: center;
     transition: outline 0.1s;
@@ -561,7 +636,7 @@ $aside-width: 200px;
     .top, .effect-wrapper { height: 50%; }
 }
 
-@media print {
+@include respond-to(print) {
     .wl-card { margin-bottom: -4px; }
     .wl-card--thinker { margin-top: 0; }
 }
@@ -573,17 +648,27 @@ $aside-width: 200px;
 
 .wl-content-block {
     padding: 1em 1em 3em;
-    max-width: 760px;
+    max-width: 768px;
+    box-sizing: border-box;
 
     h2 {
         margin-top: 2em;
         text-transform: uppercase;
     }
 
+    .img-block {
+        display: block;
+        width: 100%;
+        @include respond-to(medium) {
+            width: auto;
+        }
+    }
+
     .intro {
         font-size: 1.8em;
         color: #666;
     }
+
 
 }
 
