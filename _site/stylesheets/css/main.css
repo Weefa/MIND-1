@@ -29,30 +29,53 @@ a {
       text-decoration: none; }
     .wl-layout .aside .wl-site-name abbr {
       border: none; }
-    .wl-layout .aside .nav-group {
-      padding: 0.5em 1em; }
     .wl-layout .aside .category {
       margin: 0.5em 0;
       font-size: 1em;
       text-transform: uppercase; }
-    .wl-layout .aside .links {
+  .wl-layout .nav-group {
+    padding: 0.5em 1em; }
+    .wl-layout .nav-group .links {
       margin: 0;
       padding: 0;
       font-size: 0.8em;
       list-style: none; }
-      .wl-layout .aside .links .link {
+      .wl-layout .nav-group .links .link {
         display: block;
         margin: 0; }
-        .wl-layout .aside .links .link a {
+        .wl-layout .nav-group .links .link a {
           display: block;
           margin: 0.5em 1em;
           text-decoration: none; }
-          .wl-layout .aside .links .link a:hover {
+          .wl-layout .nav-group .links .link a:hover {
             color: red; }
   .wl-layout .footer {
     margin: 2em 0;
     padding: 2em;
-    border-top: 1px dashed #000; }
+    border-top: 1px dashed #000;
+    overflow: hidden; }
+    .wl-layout .footer .footer-nav {
+      overflow: hidden; }
+      @media screen and (min-width: 768px) {
+        .wl-layout .footer .footer-nav {
+          width: 40%;
+          float: left; } }
+      .wl-layout .footer .footer-nav .wl-header {
+        display: none; }
+      .wl-layout .footer .footer-nav .nav-group {
+        box-sizing: border-box; }
+        @media screen and (min-width: 768px) {
+          .wl-layout .footer .footer-nav .nav-group {
+            width: 33%;
+            float: left; } }
+      .wl-layout .footer .footer-nav .category {
+        margin: 0;
+        font-size: 1em; }
+    .wl-layout .footer .sign-up {
+      max-width: 80%;
+      margin: 0 auto; }
+      .wl-layout .footer .sign-up .title {
+        margin-top: 0; }
     .wl-layout .footer .email {
       display: block;
       width: 100%; }
@@ -69,6 +92,20 @@ a {
       .wl-toggle-aside:checked ~ .wl-layout .main {
         left: 0; } }
 
+@media screen and (min-width: 960px) {
+  .wl-layout {
+    padding-right: 202px; }
+    .wl-layout .aside {
+      right: 0; }
+    .wl-layout .main {
+      left: 0; }
+
+  .wl-toggle-aside:checked ~ .wl-layout {
+    padding-right: 0; }
+    .wl-toggle-aside:checked ~ .wl-layout .main {
+      left: 0; }
+    .wl-toggle-aside:checked ~ .wl-layout .aside {
+      right: -202px; } }
 .wl-aside-toggler:before {
   content: '\2630'; }
 

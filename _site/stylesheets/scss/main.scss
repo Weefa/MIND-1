@@ -91,9 +91,6 @@ a {
             abbr { border: none; }
         }
 
-        .nav-group {
-            padding: 0.5em 1em ;
-        }
 
         .category {
             margin: 0.5em 0;
@@ -101,6 +98,10 @@ a {
             text-transform: uppercase;
         }
         
+    }
+    
+    .nav-group {
+        padding: 0.5em 1em ;
         .links {
             margin: 0;
             padding: 0;
@@ -123,6 +124,44 @@ a {
         margin: 2em 0;
         padding: 2em;
         border-top: 1px dashed #000;
+        overflow: hidden;
+
+        .footer-nav {
+            overflow: hidden;
+            @include respond-to(medium) {
+                width: 40%;
+                float: left;
+            }
+
+            .wl-header {
+                display: none;
+            }
+
+            .nav-group {
+                box-sizing: border-box;
+                @include respond-to(medium) {
+                    width: 33%;
+                    float: left;
+                }
+                .link a {
+                    // margin-left: 0;
+                }
+            }
+            .category {
+                margin: 0;
+                font-size: 1em;
+            }
+
+        }
+
+        .sign-up {
+            max-width: 80%;
+            margin: 0 auto;
+
+            .title {
+                margin-top: 0;
+            }
+        }
         .email {
             display: block;
             width: 100%;
@@ -140,8 +179,26 @@ a {
             .main { left: 0; }
         }
     }
+
+
 }
 
+// Always show on wide
+@include respond-to(wide) {
+    .wl-layout {
+        padding-right: $aside-width + 2px;
+        .aside { right: 0; }
+        .main { left: 0; }
+    }
+
+    .wl-toggle-aside {
+        &:checked ~ .wl-layout {
+            padding-right: 0;
+            .main { left: 0; }
+            .aside { right: -$aside-width - 2px; }
+        }
+    }
+}
 
 .wl-aside-toggler {
     &:before {
